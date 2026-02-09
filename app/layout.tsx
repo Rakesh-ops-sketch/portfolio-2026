@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
+import { PwaInstallPrompt } from "@/components/pwa-install-prompt";
 import { SITE_URL } from "@/lib/constants";
 
 import "./globals.css";
@@ -92,6 +93,7 @@ export default function RootLayout({
           <main className="flex-1">{children}</main>
           <SiteFooter />
         </div>
+        <PwaInstallPrompt />
       </body>
     </html>
   );
