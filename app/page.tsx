@@ -14,7 +14,7 @@ import {
   Smartphone,
   Users,
 } from "lucide-react";
-import {FaGithub, FaLinkedin} from 'react-icons/fa';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -195,6 +195,43 @@ export default function Home() {
             </CardContent>
           </Card>
         </div>
+      </section>
+
+      {/* ─── INTERACTIVE PLAYGROUND STRIPE ─── */}
+      <section className="relative scroll-mt-16 border-y-2 border-primary/30 bg-gradient-to-r from-primary/10 via-purple-500/10 to-pink-500/10 overflow-hidden">
+        {/* Animated background effects */}
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/5 via-purple-500/5 to-pink-500/5 animate-pulse" />
+        <div className="absolute inset-0 -translate-x-full animate-[shimmer_3s_infinite] bg-gradient-to-r from-transparent via-white/10 to-transparent" />
+
+        {/* Glow effects */}
+        <div className="absolute -top-24 left-1/4 h-48 w-48 rounded-full bg-primary/20 blur-3xl" />
+        <div className="absolute -bottom-24 right-1/4 h-48 w-48 rounded-full bg-purple-500/20 blur-3xl" />
+
+        <Link href="/playground" className="block relative">
+          <div className="mx-auto flex w-full items-center justify-between gap-4 px-6 py-8 sm:px-10 lg:px-16 transition-all hover:bg-accent/30 hover:scale-[1.01]">
+            <div className="flex items-center gap-4">
+              <div className="relative flex size-14 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-primary to-purple-600 shadow-lg shadow-primary/50 animate-pulse">
+                <Gamepad2 className="size-7 text-white" />
+                <div className="absolute -inset-1 rounded-xl bg-gradient-to-br from-primary to-purple-600 opacity-50 blur-md -z-10" />
+              </div>
+              <div>
+                <h3 className="text-xl font-bold text-foreground sm:text-2xl bg-gradient-to-r from-primary via-purple-600 to-pink-600 bg-clip-text text-transparent">
+                  🎮 Explore Interactive Games & Algorithm Visualizers
+                </h3>
+                <p className="text-sm text-muted-foreground font-medium">
+                  ✨ Mini games, AI challenges, and CS fundamentals visualizations
+                </p>
+              </div>
+            </div>
+            <Button
+              size="lg"
+              className="gap-2 rounded-full bg-gradient-to-r from-primary via-purple-600 to-pink-600 hover:shadow-xl hover:shadow-primary/50 hover:scale-105 transition-all animate-bounce"
+            >
+              View Playground
+              <ArrowUpRight className="size-4" />
+            </Button>
+          </div>
+        </Link>
       </section>
 
       {/* ─── EXPERIENCE ─── */}

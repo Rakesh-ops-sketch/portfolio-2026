@@ -140,6 +140,13 @@
   animation: blink 1s step-end infinite;
 }
 
+/* ── Shimmer animation for game button ── */
+@keyframes shimmer {
+  100% {
+    transform: translateX(100%);
+  }
+}
+
 /* Hero typewriter gradient text */
 .hero-typewriter-gradient {
   background: linear-gradient(
