@@ -198,38 +198,26 @@ export default function Home() {
       </section>
 
       {/* ─── INTERACTIVE PLAYGROUND STRIPE ─── */}
-      <section className="relative scroll-mt-16 border-y-2 border-primary/30 bg-gradient-to-r from-primary/10 via-purple-500/10 to-pink-500/10 overflow-hidden">
-        {/* Animated background effects */}
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/5 via-purple-500/5 to-pink-500/5 animate-pulse" />
-        <div className="absolute inset-0 -translate-x-full animate-[shimmer_3s_infinite] bg-gradient-to-r from-transparent via-white/10 to-transparent" />
-
-        {/* Glow effects */}
-        <div className="absolute -top-24 left-1/4 h-48 w-48 rounded-full bg-primary/20 blur-3xl" />
-        <div className="absolute -bottom-24 right-1/4 h-48 w-48 rounded-full bg-purple-500/20 blur-3xl" />
-
-        <Link href="/playground" className="block relative">
-          <div className="mx-auto flex w-full items-center justify-between gap-4 px-6 py-8 sm:px-10 lg:px-16 transition-all hover:bg-accent/30 hover:scale-[1.01]">
-            <div className="flex items-center gap-4">
-              <div className="relative flex size-14 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-primary to-purple-600 shadow-lg shadow-primary/50 animate-pulse">
-                <Gamepad2 className="size-7 text-white" />
-                <div className="absolute -inset-1 rounded-xl bg-gradient-to-br from-primary to-purple-600 opacity-50 blur-md -z-10" />
+      <section className="scroll-mt-16 border-t border-border/40 border-l-4 border-l-primary/30 bg-accent/40 bg-gradient-to-r from-primary/[0.06] to-transparent">
+        <Link href="/playground" className="block transition-colors hover:bg-accent/50">
+          <div className="mx-auto flex w-full max-w-5xl flex-col items-center gap-4 px-6 py-8 text-center sm:flex-row sm:justify-between sm:gap-6 sm:text-left sm:py-10">
+            <div className="flex flex-col items-center gap-3 sm:flex-row sm:items-center sm:gap-4">
+              <div className="flex size-12 shrink-0 items-center justify-center rounded-xl bg-primary/20 text-primary sm:size-14">
+                <Gamepad2 className="size-6 sm:size-7" />
               </div>
-              <div>
-                <h3 className="text-xl font-bold text-foreground sm:text-2xl bg-gradient-to-r from-primary via-purple-600 to-pink-600 bg-clip-text text-transparent">
-                  🎮 Explore Interactive Games & Algorithm Visualizers
+              <div className="space-y-1">
+                <h3 className="text-lg font-semibold leading-tight text-foreground sm:text-xl">
+                  Interactive Games & Algorithm Visualizers
                 </h3>
-                <p className="text-sm text-muted-foreground font-medium">
-                  ✨ Mini games, AI challenges, and CS fundamentals visualizations
+                <p className="text-sm text-muted-foreground">
+                  Mini games, AI challenges, and CS fundamentals
                 </p>
               </div>
             </div>
-            <Button
-              size="lg"
-              className="gap-2 rounded-full bg-gradient-to-r from-primary via-purple-600 to-pink-600 hover:shadow-xl hover:shadow-primary/50 hover:scale-105 transition-all animate-bounce"
-            >
+            <span className="inline-flex h-11 shrink-0 items-center justify-center gap-2 rounded-full bg-primary px-6 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90">
               View Playground
               <ArrowUpRight className="size-4" />
-            </Button>
+            </span>
           </div>
         </Link>
       </section>
