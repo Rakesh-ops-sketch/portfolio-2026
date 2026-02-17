@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState, useRef, useCallback } from "react";
-import { Moon, Sun } from "lucide-react";
+import { Moon, Sun, Loader2 } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 
@@ -87,8 +87,8 @@ function fireBurn(oldColor: string, onSwap: () => void, onDone: () => void) {
   const animations: Animation[] = [];
   circles.forEach((circle, i) => {
     const r = maxR * (0.5 + Math.random() * 0.6);
-    const duration = 1600 + Math.random() * 900;
-    const delay = Math.random() * 500;
+    const duration = 400 + Math.random() * 300; // Reduced from 1600 + 900
+    const delay = Math.random() * 200; // Reduced from 500
     const anim = circle.animate([{ r: 0 }, { r }], {
       duration,
       delay,
@@ -105,7 +105,7 @@ function fireBurn(oldColor: string, onSwap: () => void, onDone: () => void) {
 
   Promise.all(animations.map((a) => a.finished)).then(() => {
     overlay.animate([{ opacity: 1 }, { opacity: 0 }], {
-      duration: 350,
+      duration: 150, // Reduced from 350
       fill: "forwards",
     }).onfinish = cleanup;
   });
@@ -155,6 +155,11 @@ export function ThemeToggle() {
     if (animating) return;
     setAnimating(true);
 
+    // Haptic feedback for mobile devices
+    if ('vibrate' in navigator) {
+      navigator.vibrate(50); // Short 50ms vibration
+    }
+
     const next = !isDark;
     const oldColor = isDark ? "oklch(0.145 0 0)" : "oklch(1 0 0)";
 
@@ -186,7 +191,13 @@ export function ThemeToggle() {
       disabled={animating}
       aria-label={isDark ? "Switch to light mode" : "Switch to dark mode"}
     >
-      {isDark ? <Sun className="size-4" /> : <Moon className="size-4" />}
+      {animating ? (
+        <Loader2 className="size-4 animate-spin" />
+      ) : isDark ? (
+        <Sun className="size-4" />
+      ) : (
+        <Moon className="size-4" />
+      )}
     </Button>
   );
 }
