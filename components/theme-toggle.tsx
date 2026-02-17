@@ -155,9 +155,16 @@ export function ThemeToggle() {
     if (animating) return;
     setAnimating(true);
 
-    // Haptic feedback for mobile devices
-    if ('vibrate' in navigator) {
-      navigator.vibrate(50); // Short 50ms vibration
+    // Haptic feedback for mobile devices - must be synchronous with user gesture
+    try {
+      if (typeof navigator !== 'undefined' && navigator.vibrate) {
+        const vibrated = navigator.vibrate(100); // 100ms for better perceptibility
+        console.log('Vibration triggered:', vibrated);
+      } else {
+        console.log('Vibration API not available');
+      }
+    } catch (e) {
+      console.error('Vibration error:', e);
     }
 
     const next = !isDark;
