@@ -1,16 +1,17 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Baloo_Thambi_2, Geist_Mono } from "next/font/google";
 
-import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
-import { PwaInstallPrompt } from "@/components/pwa-install-prompt";
+import { PortfolioMotion } from "@/components/portfolio-motion";
 import { SITE_URL } from "@/lib/constants";
 
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const balooThambi = Baloo_Thambi_2({
+  variable: "--font-baloo-thambi",
   subsets: ["latin"],
+  weight: "variable",
+  display: "swap",
 });
 
 const geistMono = Geist_Mono({
@@ -48,8 +49,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth" suppressHydrationWarning>
+    <html lang="en" className="scroll-smooth" data-intro="pending" suppressHydrationWarning>
       <head>
+        {/* Critical first-paint guard: the reveal must precede the streamed header. */}
+        <style
+          dangerouslySetInnerHTML={{
+            __html: `html[data-intro="pending"] .site-header{opacity:0!important}.page-intro-curtain{position:fixed;inset:0;z-index:9999;display:grid;place-items:center;overflow:hidden;background:#171410}`,
+          }}
+        />
         {/* PWA Meta Tags */}
         <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#0a0a0a" />
@@ -65,10 +72,23 @@ export default function RootLayout({
           }}
         />
 
-        {/* Service Worker Registration */}
+        {/* Keep local development free of stale PWA caches. */}
         <script
           dangerouslySetInnerHTML={{
-            __html: `
+            __html: process.env.NODE_ENV === "development" ? `
+              if ('serviceWorker' in navigator) {
+                window.addEventListener('load', async function() {
+                  var registrations = await navigator.serviceWorker.getRegistrations();
+                  await Promise.all(registrations.map(function(registration) {
+                    return registration.unregister();
+                  }));
+                  if ('caches' in window) {
+                    var keys = await caches.keys();
+                    await Promise.all(keys.map(function(key) { return caches.delete(key); }));
+                  }
+                });
+              }
+            ` : `
               if ('serviceWorker' in navigator) {
                 window.addEventListener('load', function() {
                   navigator.serviceWorker.register('/sw.js').then(
@@ -86,14 +106,13 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} min-h-screen bg-background text-foreground antialiased`}
+        className={`${balooThambi.variable} ${geistMono.variable} min-h-screen bg-background text-foreground antialiased`}
       >
+        <PortfolioMotion />
         <div className="flex min-h-screen flex-col">
           <SiteHeader />
           <main className="flex-1">{children}</main>
-          <SiteFooter />
         </div>
-        <PwaInstallPrompt />
       </body>
     </html>
   );
