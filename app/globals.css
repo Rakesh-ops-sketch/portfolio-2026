@@ -630,6 +630,17 @@ body { overflow-x: hidden; }
 }
 .premium-hero-title .premium-word-mask > .premium-word-accent { color: #a65332; }
 .premium-ambient { position: absolute; inset: 0; z-index: 0; overflow: hidden; pointer-events: none; }
+.hero-location-map {
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  overflow: hidden;
+  opacity: .28;
+  pointer-events: none;
+  mask-image: radial-gradient(ellipse 72% 67% at 55% 50%, #000 20%, rgba(0,0,0,.72) 63%, transparent 100%);
+}
+.hero-location-map-frame { position: absolute; inset: -12%; width: 124%; height: 124%; border: 0; filter: grayscale(1) sepia(.16) contrast(.82) brightness(1.1); }
+.hero-location-map-wash { position: absolute; inset: 0; background: rgba(242,238,230,.48); }
 .premium-ambient-orb { position: absolute; right: -4%; top: 8%; width: min(48vw, 720px); aspect-ratio: 1; border-radius: 50%; filter: blur(2px); background: radial-gradient(circle at 38% 36%, rgba(180,91,57,.18), rgba(166,83,50,.05) 46%, transparent 70%); }
 .premium-ambient-ring { position: absolute; right: -11%; top: -24%; width: min(56vw, 840px); aspect-ratio: 1; border-radius: 50%; border: 1px solid rgba(17,18,15,.085); }
 .premium-ambient-ring-two { right: 7%; top: -17%; width: min(35vw, 520px); border-color: rgba(17,18,15,.065); }
@@ -640,11 +651,15 @@ body { overflow-x: hidden; }
 .dark .premium-ambient-ring { border-color: rgba(255,255,255,.09); }
 .dark .premium-ambient-ring-two { border-color: rgba(255,255,255,.065); }
 .dark .premium-ambient-orb { background: radial-gradient(circle at 38% 36%, rgba(211,139,103,.16), rgba(126,58,35,.045) 48%, transparent 72%); }
+.dark .hero-location-map-frame { filter: grayscale(1) sepia(.15) invert(.88) contrast(.74) brightness(.42); }
+.dark .hero-location-map-wash { background: rgba(21,19,16,.42); }
 
 @media (max-width: 640px) {
   .premium-hero-title { font-size: clamp(2.55rem,11.8vw,3.7rem); line-height: 1.04; letter-spacing: -.045em; }
   .premium-hero-line { display: flex; }
   .premium-ambient-orb { width: 110vw; right: -55%; top: 10%; }
+  .hero-location-map { opacity: .22; }
+  .hero-location-map-frame { inset: -18% -45%; width: 190%; height: 136%; }
 }
 
 @media (prefers-reduced-motion: reduce) {

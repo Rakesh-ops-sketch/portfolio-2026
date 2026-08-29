@@ -15,6 +15,7 @@ import { CaseStudyVisual } from "@/components/case-study-visual";
 import { EvaluationCaseVisual } from "@/components/evaluation-case-visual";
 import { CaseStudyAtmosphere, CaseStudyReveal } from "@/components/case-study-motion";
 import { AnimatedCaseMetrics } from "@/components/animated-case-metrics";
+import { HeroLocationMap } from "@/components/hero-location-map";
 
 const roles = [
   {
@@ -79,6 +80,7 @@ export default function Home() {
     <div className="portfolio-shell">
       <section className="hero-section" aria-labelledby="hero-title">
         <div className="hero-grid" aria-hidden="true" />
+        <HeroLocationMap />
         <PremiumHeroAmbient />
 
         <div className="page-wrap relative z-10 flex min-h-[calc(100svh-4rem)] flex-col justify-between py-8 md:py-12">
