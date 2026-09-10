@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import dynamic from "next/dynamic";
 import { BarChart3, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
@@ -11,7 +12,7 @@ import {
     DialogTitle,
     DialogTrigger,
 } from "@/components/ui/dialog";
-import { SortingVisualizer } from "@/components/sorting-visualizer";
+const SortingVisualizer = dynamic(() => import("@/components/sorting-visualizer").then((mod) => mod.SortingVisualizer));
 
 export function SortingModal() {
     const [open, setOpen] = useState(false);

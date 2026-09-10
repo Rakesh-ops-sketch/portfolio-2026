@@ -1,7 +1,4 @@
-"use client";
-
-import { ArrowUpRight, Download, MapPin } from "lucide-react";
-import { motion } from "motion/react";
+import { ArrowUpRight, MapPin } from "lucide-react";
 import { Reveal, WordReveal } from "@/components/motion-primitives";
 
 const values = [
@@ -15,7 +12,7 @@ export default function AboutPage() {
     <div className="inner-page">
       <section className="inner-hero page-wrap">
         <div className="section-kicker"><span>01</span> About</div>
-        <WordReveal className="inner-title" text="Builder, leader, and systems thinker." />
+        <WordReveal className="inner-title" text="Builder, leader, and systems thinker." delay={0.08} eager />
         <div className="inner-hero-foot">
           <p>I work across product, engineering, and operations to turn complicated field problems into dependable software.</p>
           <span><MapPin className="size-4" /> Bengaluru, India</span>
@@ -23,7 +20,7 @@ export default function AboutPage() {
       </section>
 
       <section className="section-paper"><div className="page-wrap section-pad about-story-grid">
-        <Reveal><p className="big-statement">I care about the moment software leaves the demo environment and meets the real world.</p></Reveal>
+        <WordReveal as="p" className="big-statement" text="I care about the moment software leaves the demo environment and meets the real world." />
         <Reveal delay={0.08} className="story-copy">
           <p>My path started with browser games and interactive experiences. That work taught me to think in systems: inputs, state, performance, and feedback.</p>
           <p>Today I lead teams building mobile and backend platforms used for large-scale education programs. I remain close to the code while shaping architecture, delivery, and the conditions teams need to do excellent work.</p>
@@ -35,9 +32,9 @@ export default function AboutPage() {
         <Reveal><div className="section-kicker"><span>02</span> Principles</div></Reveal>
         <div className="principles-grid">
           {values.map(([number, title, copy], index) => (
-            <motion.article key={title} className="principle-card" initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: index * .1, duration: .7 }} whileHover={{ y: -8 }}>
-              <span>{number}</span><h2>{title}</h2><p>{copy}</p>
-            </motion.article>
+            <article key={title} className="principle-card" style={{ transitionDelay: `${index * 70}ms` }}>
+              <span>{number}</span><WordReveal as="h2" text={title} amount={0.6} /><p>{copy}</p>
+            </article>
           ))}
         </div>
       </div></section>

@@ -1,11 +1,10 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import { AnimatePresence, motion, useReducedMotion } from "motion/react";
+import { useEffect } from "react";
+import { motion, useReducedMotion } from "motion/react";
 
 export function PortfolioMotion() {
   const reduceMotion = useReducedMotion();
-  const [showIntro, setShowIntro] = useState(true);
 
   useEffect(() => {
     const root = document.documentElement;
@@ -14,11 +13,6 @@ export function PortfolioMotion() {
     const textItems = [...document.querySelectorAll<HTMLElement>(
       ".display-heading, .evaluation-case-intro h2, .capability-card h3, .experience-role h3, .contact-section h2",
     )];
-
-    const introTimer = window.setTimeout(() => {
-      document.documentElement.dataset.intro = "complete";
-      setShowIntro(false);
-    }, reduced ? 0 : 1050);
 
     if (reduced) {
       revealItems.forEach((item) => item.dataset.visible = "true");
@@ -53,8 +47,6 @@ export function PortfolioMotion() {
     const updateScroll = () => {
       cancelAnimationFrame(frame);
       frame = requestAnimationFrame(() => {
-        const max = document.documentElement.scrollHeight - innerHeight;
-        root.style.setProperty("--scroll-progress", `${max > 0 ? scrollY / max : 0}`);
         root.style.setProperty("--hero-shift", `${Math.min(scrollY * 0.14, 110)}px`);
       });
     };
@@ -85,7 +77,6 @@ export function PortfolioMotion() {
     return () => {
       observer.disconnect();
       textObserver.disconnect();
-      clearTimeout(introTimer);
       cancelAnimationFrame(frame);
       removeEventListener("scroll", updateScroll);
       removeEventListener("pointermove", updatePointer);
@@ -95,46 +86,6 @@ export function PortfolioMotion() {
 
   return (
     <>
-      <AnimatePresence>
-        {showIntro && (
-          <motion.div
-            className="page-intro-curtain page-intro-trace"
-            initial={{ opacity: 1, filter: "blur(0px)", scale: 1 }}
-            animate={{ opacity: 1, filter: "blur(0px)", scale: 1 }}
-            exit={{
-              opacity: 0,
-              filter: "blur(16px)",
-              scale: 1.025,
-              transition: { duration: reduceMotion ? 0 : .85, ease: [0.76, 0, 0.24, 1] },
-            }}
-            transition={{ duration: reduceMotion ? 0 : .2 }}
-          >
-            <motion.svg className="page-intro-trace-svg" viewBox="0 0 1000 400" preserveAspectRatio="none" aria-hidden="true">
-              <motion.path
-                d="M -40 270 C 150 28, 315 360, 505 188 S 810 22, 1040 218"
-                initial={reduceMotion ? false : { pathLength: 0, opacity: 0 }}
-                animate={{ pathLength: 1, opacity: 1 }}
-                transition={{ duration: reduceMotion ? 0 : 1.05, ease: [0.65, 0, 0.35, 1] }}
-              />
-              <motion.path
-                className="page-intro-trace-echo"
-                d="M -40 294 C 170 54, 330 382, 520 212 S 825 48, 1040 242"
-                initial={reduceMotion ? false : { pathLength: 0, opacity: 0 }}
-                animate={{ pathLength: 1, opacity: .18 }}
-                transition={{ duration: reduceMotion ? 0 : 1.15, delay: .08, ease: [0.65, 0, 0.35, 1] }}
-              />
-            </motion.svg>
-            <motion.div
-              initial={reduceMotion ? false : { opacity: 0, y: 12 }}
-              animate={{ opacity: 1, y: 0, scale: 1 }}
-              exit={{ opacity: 0, scale: .98 }}
-              transition={{ duration: reduceMotion ? 0 : .65, delay: .22, ease: [0.16, 1, 0.3, 1] }}
-            >
-              <span className="page-intro-monogram">RB</span><i /><small>Designing dependable systems</small>
-            </motion.div>
-          </motion.div>
-        )}
-      </AnimatePresence>
       <motion.div
         className="premium-ambient-canvas"
         aria-hidden="true"
@@ -142,7 +93,6 @@ export function PortfolioMotion() {
         transition={{ duration: 16, repeat: Infinity, ease: "easeInOut" }}
       />
       <div className="premium-pointer-light" aria-hidden="true" />
-      <div className="scroll-progress" aria-hidden="true" />
     </>
   );
 }

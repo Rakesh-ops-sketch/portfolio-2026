@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import dynamic from "next/dynamic";
 import { Zap, Activity } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
@@ -11,7 +12,7 @@ import {
     DialogTitle,
     DialogTrigger,
 } from "@/components/ui/dialog";
-import { EventLoopVisualizer } from "@/components/eventloop-visualizer";
+const EventLoopVisualizer = dynamic(() => import("@/components/eventloop-visualizer").then((mod) => mod.EventLoopVisualizer));
 
 export function EventLoopModal() {
     const [open, setOpen] = useState(false);

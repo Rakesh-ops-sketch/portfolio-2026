@@ -67,7 +67,7 @@ export default function PlaygroundPage() {
     <div className="inner-page playground-page">
       <section className="inner-hero page-wrap">
         <div className="section-kicker"><span>03</span> Interactive playground</div>
-        <WordReveal className="inner-title" text="Small experiments. Serious curiosity." />
+        <WordReveal className="inner-title" text="Small experiments. Serious curiosity." delay={0.08} eager />
         <div className="inner-hero-foot">
           <p>Playable ideas and visual explanations built to make algorithms, state, and browser behavior tangible.</p>
           <span>13 EXPERIMENTS / ALWAYS EVOLVING</span>
@@ -76,14 +76,14 @@ export default function PlaygroundPage() {
 
       <section className="playground-section section-paper">
         <div className="page-wrap section-pad">
-          <Reveal><div className="section-kicker"><span>01</span> Games</div><h2 className="playground-heading">Logic you can play.</h2></Reveal>
+          <Reveal><div className="section-kicker"><span>01</span> Games</div><WordReveal as="h2" className="playground-heading" text="Logic you can play." /></Reveal>
           <DemoGrid items={games} type="game" />
         </div>
       </section>
 
       <section className="playground-section section-light">
         <div className="page-wrap section-pad">
-          <Reveal><div className="section-kicker"><span>02</span> Visual systems</div><h2 className="playground-heading">Concepts you can see.</h2></Reveal>
+          <Reveal><div className="section-kicker"><span>02</span> Visual systems</div><WordReveal as="h2" className="playground-heading" text="Concepts you can see." /></Reveal>
           <DemoGrid items={visualizers} type="system" />
         </div>
       </section>

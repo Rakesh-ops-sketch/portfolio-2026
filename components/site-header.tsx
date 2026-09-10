@@ -1,17 +1,19 @@
 "use client";
 
-import { useState } from "react";
-import Link from "next/link";
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
-import { Menu } from "lucide-react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { ArrowUpRight, Menu } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import {
   Sheet,
   SheetContent,
-  SheetTrigger,
   SheetTitle,
+  SheetTrigger,
 } from "@/components/ui/sheet";
+import { NavWater } from "@/components/nav-water";
 import { ThemeToggle } from "@/components/theme-toggle";
 
 const navItems = [
@@ -19,25 +21,47 @@ const navItems = [
   { href: "/about", label: "About" },
   { href: "/work", label: "Work" },
   { href: "/playground", label: "Playground" },
-  { href: "/contact", label: "Contact" },
 ];
 
 export function SiteHeader() {
+  const pathname = usePathname();
+  const headerRef = useRef<HTMLElement>(null);
   const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    let frame = 0;
+    const updateProgress = () => {
+      cancelAnimationFrame(frame);
+      frame = requestAnimationFrame(() => {
+        const max = document.documentElement.scrollHeight - window.innerHeight;
+        const progress = max > 0 ? Math.min(1, Math.max(0, window.scrollY / max)) : 0;
+        headerRef.current?.style.setProperty("--nav-progress", `${progress * 100}%`);
+        setScrolled(window.scrollY > 12);
+      });
+    };
+    const resizeObserver = new ResizeObserver(updateProgress);
+    resizeObserver.observe(document.body);
+    updateProgress();
+    window.addEventListener("scroll", updateProgress, { passive: true });
+    window.addEventListener("resize", updateProgress);
+    return () => {
+      cancelAnimationFrame(frame);
+      resizeObserver.disconnect();
+      window.removeEventListener("scroll", updateProgress);
+      window.removeEventListener("resize", updateProgress);
+    };
+  }, [pathname]);
+
+  const isActive = (href: string) =>
+    href === "/" ? pathname === href : pathname.startsWith(href);
 
   return (
-    <header className="site-header sticky top-0 z-50 w-full backdrop-blur-xl">
-      <div className="mx-auto flex min-h-16 w-full max-w-[1380px] items-center justify-between px-4 sm:px-10">
-        <Link
-          href="/"
-          className="site-brand flex items-center gap-2 text-sm font-semibold tracking-[-0.02em]"
-        >
-          <span className="logo-smoke-wrap">
-            <span className="smoke-wisp smoke-wisp-1" aria-hidden="true" />
-            <span className="smoke-wisp smoke-wisp-2" aria-hidden="true" />
-            <span className="smoke-wisp smoke-wisp-3" aria-hidden="true" />
-            <span className="smoke-wisp smoke-wisp-4" aria-hidden="true" />
-            <span className="smoke-wisp smoke-wisp-5" aria-hidden="true" />
+    <header ref={headerRef} className={`site-header fixed z-50 w-full ${scrolled ? "is-scrolled" : ""}`}>
+      <div className="site-header-inner mx-auto flex w-full max-w-[1440px] items-center justify-between px-4 sm:px-8">
+        <div className="site-header-fill" aria-hidden="true"><NavWater /></div>
+        <Link href="/" className="site-brand" aria-label="Rakesh Biswal — home">
+          <span className="site-logo-wrap">
             <Image
               src="/logo-wordmark-v2.png?v=20260821-2"
               alt="Rakesh"
@@ -50,48 +74,72 @@ export function SiteHeader() {
           </span>
         </Link>
 
-        {/* Desktop nav */}
-        <nav className="hidden items-center gap-1 md:flex">
-          {navItems.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              className="site-nav-link px-3 py-2 text-[11px] font-medium uppercase tracking-[0.13em] transition-colors"
-            >
-              {item.label}
-            </Link>
-          ))}
-          <ThemeToggle />
+        <nav className="site-nav-capsule hidden items-center md:flex" aria-label="Primary navigation">
+          {navItems.map((item) => {
+            const active = isActive(item.href);
+            return (
+              <Link
+                key={item.href}
+                href={item.href}
+                prefetch={item.href === "/playground" ? false : undefined}
+                aria-current={active ? "page" : undefined}
+                className={`site-nav-link ${active ? "is-active" : ""}`}
+              >
+                <span>{item.label}</span>
+              </Link>
+            );
+          })}
         </nav>
 
-        {/* Mobile nav */}
+        <div className="site-header-actions hidden items-center gap-2 md:flex">
+          <div className="site-theme-control">
+            <ThemeToggle />
+          </div>
+          <Link href="/contact" className={`site-contact-link ${pathname === "/contact" ? "is-active" : ""}`}>
+            <span>Let&apos;s talk</span>
+            <ArrowUpRight aria-hidden="true" />
+          </Link>
+        </div>
+
         <div className="flex items-center gap-1 md:hidden">
-          <ThemeToggle />
+          <div className="site-theme-control">
+            <ThemeToggle />
+          </div>
           <Sheet open={open} onOpenChange={setOpen}>
             <SheetTrigger asChild>
-              <Button variant="ghost" size="icon">
+              <Button className="site-menu-trigger" variant="ghost" size="icon">
                 <Menu className="size-5" />
-                <span className="sr-only">Toggle menu</span>
+                <span className="sr-only">Open navigation menu</span>
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="w-72 border-l border-white/10 bg-[#11120f] p-0 text-white">
-              <div className="px-5 pt-5">
-                <SheetTitle className="text-base font-bold tracking-tight text-white">
-                  Rakesh<span className="text-[#6f8cff]">.</span>
-                </SheetTitle>
+            <SheetContent side="right" className="mobile-nav-panel w-[min(90vw,25rem)] p-0" showCloseButton>
+              <div className="mobile-nav-head">
+                <SheetTitle>Navigation</SheetTitle>
+                <span>RB / 2026</span>
               </div>
-              <nav className="flex flex-col gap-1 px-3 pt-4 pb-6">
-                {navItems.map((item) => (
-                  <Link
-                    key={item.href}
-                    href={item.href}
-                    onClick={() => setOpen(false)}
-                    className="rounded-md px-3 py-2.5 text-left text-sm font-medium text-white/60 transition-colors hover:bg-white/5 hover:text-[#8ea3ff]"
-                  >
-                    {item.label}
-                  </Link>
-                ))}
+              <nav className="mobile-nav-links" aria-label="Mobile navigation">
+                {[...navItems, { href: "/contact", label: "Contact" }].map((item, index) => {
+                  const active = isActive(item.href);
+                  return (
+                    <Link
+                      key={item.href}
+                      href={item.href}
+                      prefetch={item.href === "/playground" ? false : undefined}
+                      aria-current={active ? "page" : undefined}
+                      onClick={() => setOpen(false)}
+                      className={active ? "is-active" : ""}
+                    >
+                      <span>0{index + 1}</span>
+                      <strong>{item.label}</strong>
+                      <ArrowUpRight aria-hidden="true" />
+                    </Link>
+                  );
+                })}
               </nav>
+              <div className="mobile-nav-foot">
+                <span className="status-dot" aria-hidden="true" />
+                Available for meaningful work
+              </div>
             </SheetContent>
           </Sheet>
         </div>

@@ -15,6 +15,7 @@ import { CaseStudyVisual } from "@/components/case-study-visual";
 import { EvaluationCaseVisual } from "@/components/evaluation-case-visual";
 import { CaseStudyAtmosphere, CaseStudyReveal } from "@/components/case-study-motion";
 import { AnimatedCaseMetrics } from "@/components/animated-case-metrics";
+import { WordReveal } from "@/components/motion-primitives";
 
 const roles = [
   {
@@ -81,7 +82,7 @@ export default function Home() {
         <div className="hero-grid" aria-hidden="true" />
         <PremiumHeroAmbient />
 
-        <div className="page-wrap relative z-10 flex min-h-[calc(100svh-4rem)] flex-col justify-between py-8 md:py-12">
+        <div className="page-wrap relative z-10 flex min-h-screen flex-col justify-between pb-8 pt-24 md:pb-12 md:pt-28">
           <div className="hero-meta flex items-center justify-between gap-4 text-[11px] font-medium uppercase tracking-[0.22em]">
             <span className="flex items-center gap-2">
               <span className="status-dot" /> Available for meaningful work
@@ -118,9 +119,7 @@ export default function Home() {
           <div className="mt-10 grid gap-12 lg:mt-16 lg:grid-cols-[0.85fr_1.15fr] lg:gap-20">
             <CaseStudyReveal direction="left">
               <p className="eyebrow-lime">National FLN platform</p>
-              <h2 className="mt-5 text-4xl font-semibold tracking-[-0.045em] text-white sm:text-5xl lg:text-6xl">
-                Ei Neev Assessments
-              </h2>
+              <WordReveal as="h2" className="mt-5 text-4xl font-semibold tracking-[-0.045em] text-white sm:text-5xl lg:text-6xl" text="Ei Neev Assessments" />
               <p className="mt-7 max-w-xl text-base leading-7 text-white/58 md:text-lg md:leading-8">
                 An offline-first foundational literacy and numeracy platform built for government-backed education programs operating across low-connectivity classrooms.
               </p>
@@ -184,7 +183,7 @@ export default function Home() {
           <div className="evaluation-case-hero mt-10 lg:mt-16">
             <CaseStudyReveal direction="left" className="evaluation-case-intro">
               <p className="evaluation-eyebrow">Real-time scoring infrastructure</p>
-              <h2>Evaluator &amp;<br />Scoring Portal</h2>
+              <WordReveal as="h2" text="Evaluator & Scoring Portal" />
               <p>A high-throughput evaluator workspace designed to keep scoring fast, recoverable, and traceable while thousands of browser events compete for delivery.</p>
               <div className="mt-9 flex flex-wrap gap-2">
                 {["Full-duplex WebSockets", "Persistent event queues", "Audit trails", "AI-assisted scoring"].map((tech) => <span key={tech} className="evaluation-pill">{tech}</span>)}
@@ -231,7 +230,7 @@ export default function Home() {
         <div className="page-wrap section-pad">
           <div className="section-kicker"><span>03</span> What I bring</div>
           <CaseStudyReveal className="capabilities-heading mt-10 md:mt-16">
-            <h2 className="display-heading">Direction for the team.<br />Depth in the implementation.</h2>
+            <WordReveal as="h2" className="display-heading" text="Direction for the team. Depth in the implementation." />
             <p>I work across the product stack—from the interface people touch to the architecture, delivery systems, and engineering practices that keep it dependable.</p>
           </CaseStudyReveal>
 
@@ -246,7 +245,7 @@ export default function Home() {
           </CaseStudyReveal>
 
           <CaseStudyReveal delay={.12}>
-          <Link href="/playground" className="playground-card capabilities-playground mt-14 md:mt-24">
+          <Link href="/playground" prefetch={false} className="playground-card capabilities-playground mt-14 md:mt-24">
             <div className="flex items-center gap-3 text-xs font-medium uppercase tracking-[0.18em]"><Sparkles className="size-4" /> Interactive lab</div>
             <div className="mt-12 flex flex-col gap-6 md:mt-20 md:flex-row md:items-end md:justify-between">
               <div><h3>See how I think in motion.</h3><p>Algorithms, games, and small experiments—built to be explored.</p></div>
@@ -263,7 +262,7 @@ export default function Home() {
           <div className="experience-layout mt-10 lg:mt-16">
             <CaseStudyReveal className="experience-intro" direction="left">
               <p className="experience-overline">March 2022 — Present</p>
-              <h2 className="display-heading">Four roles. One continuous rise in ownership.</h2>
+              <WordReveal as="h2" className="display-heading" text="Four roles. One continuous rise in ownership." />
               <p>From building HTML5 learning experiences to leading architecture, delivery, and engineering teams—while remaining close to the implementation.</p>
             </CaseStudyReveal>
             <CaseStudyReveal className="experience-timeline" direction="right" delay={.1}>
@@ -285,7 +284,7 @@ export default function Home() {
         <div className="page-wrap section-pad text-center" data-reveal>
           <div className="mx-auto flex size-12 items-center justify-center rounded-full border border-[#6f8cff]/35 text-[#6f8cff]"><Mail className="size-5" /></div>
           <p className="mt-6 text-xs font-medium uppercase tracking-[0.24em] text-white/45">Have a hard problem worth solving?</p>
-          <h2 className="mx-auto mt-7 max-w-5xl text-5xl font-semibold tracking-[-0.06em] text-white sm:text-6xl lg:text-8xl">Bring me the problem that needs more than a quick fix.</h2>
+          <WordReveal as="h2" className="mx-auto mt-7 max-w-5xl text-5xl font-semibold tracking-[-0.06em] text-white sm:text-6xl lg:text-8xl" text="Bring me the problem that needs more than a quick fix." />
           <a href="mailto:hsekar.bat@gmail.com" className="button-lime mx-auto mt-10 w-fit">Start a conversation <ArrowUpRight className="size-4" /></a>
           <div className="mt-20 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-6 text-xs text-white/40 sm:flex-row">
             <span>RAKESH BISWAL — ENGINEERING LEADER</span>

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import dynamic from "next/dynamic";
 import { Gamepad2, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
@@ -11,7 +12,7 @@ import {
     DialogTitle,
     DialogTrigger,
 } from "@/components/ui/dialog";
-import { SnakeGame } from "@/components/snake-game";
+const SnakeGame = dynamic(() => import("@/components/snake-game").then((mod) => mod.SnakeGame));
 
 export function SnakeGameModal() {
     const [open, setOpen] = useState(false);

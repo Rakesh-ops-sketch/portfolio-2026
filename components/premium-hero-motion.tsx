@@ -14,6 +14,7 @@ export function PremiumHeroHeadline() {
   const [isRevealed, setIsRevealed] = useState(Boolean(reduceMotion));
   let wordIndex = 0;
   const finalWordIndex = lines.flat().length - 1;
+  const revealDelay = 0.28;
 
   return (
     <h1
@@ -29,9 +30,13 @@ export function PremiumHeroHeadline() {
               <span className="premium-word-mask" key={word}>
                 <motion.span
                   className={word === "endure." ? "premium-word premium-word-accent" : "premium-word"}
-                  initial={reduceMotion ? false : { opacity: 0, y: "72%", filter: "blur(12px)" }}
-                  animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
-                  transition={{ duration: 0.82, delay: 0.05 + index * 0.065, ease: [0.16, 1, 0.3, 1] }}
+                  initial={reduceMotion ? false : { opacity: 0, y: "108%", rotate: 2.2 }}
+                  animate={{ opacity: 1, y: "0%", rotate: 0 }}
+                  transition={{
+                    duration: 1.18,
+                    delay: revealDelay + index * 0.14,
+                    ease: [0.16, 1, 0.3, 1],
+                  }}
                   onAnimationComplete={() => {
                     if (index === finalWordIndex) setIsRevealed(true);
                   }}
@@ -70,7 +75,7 @@ export function PremiumHeroActions() {
       className="mt-8 flex flex-wrap justify-center gap-3"
       initial={{ opacity: 0, y: 18 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.7, delay: 0.72, ease: [0.16, 1, 0.3, 1] }}
+      transition={{ duration: 0.9, delay: 1.72, ease: [0.16, 1, 0.3, 1] }}
     >
       <motion.a href="/work" className="button-lime" whileHover={{ y: -3, scale: 1.015 }} whileTap={{ scale: 0.97 }}>
         Explore my work <ArrowDown className="size-4" />

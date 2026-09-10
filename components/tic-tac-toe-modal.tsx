@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import dynamic from "next/dynamic";
 import { Brain, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
@@ -11,7 +12,7 @@ import {
     DialogTitle,
     DialogTrigger,
 } from "@/components/ui/dialog";
-import { TicTacToe } from "@/components/tic-tac-toe";
+const TicTacToe = dynamic(() => import("@/components/tic-tac-toe").then((mod) => mod.TicTacToe));
 
 export function TicTacToeModal() {
     const [open, setOpen] = useState(false);

@@ -49,14 +49,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth" data-intro="pending" suppressHydrationWarning>
+    <html lang="en" className="scroll-smooth" suppressHydrationWarning>
       <head>
-        {/* Critical first-paint guard: the reveal must precede the streamed header. */}
-        <style
-          dangerouslySetInnerHTML={{
-            __html: `html[data-intro="pending"] .site-header{opacity:0!important}.page-intro-curtain{position:fixed;inset:0;z-index:9999;display:grid;place-items:center;overflow:hidden;background:#171410}`,
-          }}
-        />
         {/* PWA Meta Tags */}
         <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#0a0a0a" />

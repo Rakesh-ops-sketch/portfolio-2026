@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import dynamic from "next/dynamic";
 import { Route, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
@@ -11,7 +12,7 @@ import {
     DialogTitle,
     DialogTrigger,
 } from "@/components/ui/dialog";
-import { PathfindingVisualizer } from "@/components/pathfinding-visualizer";
+const PathfindingVisualizer = dynamic(() => import("@/components/pathfinding-visualizer").then((mod) => mod.PathfindingVisualizer));
 
 export function PathfindingModal() {
     const [open, setOpen] = useState(false);
