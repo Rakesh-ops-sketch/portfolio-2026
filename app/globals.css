@@ -456,6 +456,9 @@
   .site-header.is-scrolled .site-header-inner { height: 3.75rem; }
   .brand-wordmark { width: 6.8rem; }
   .site-logo-wrap { width: 7.25rem; }
+  .about-hero,
+  .playground-page .inner-hero { padding-top: 7rem; }
+  .contact-page-inner { padding-top: 7rem; }
 }
 .dark .portfolio-shell, .dark .inner-page { background: #10110f; color: #f5f5f1; }
 .dark .section-light { background: #10110f; }.dark .section-paper { background: #191a17; }.dark .section-ink { background: #080907; }

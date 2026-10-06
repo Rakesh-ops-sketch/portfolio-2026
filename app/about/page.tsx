@@ -58,7 +58,7 @@ const careerChapters = [
 export default function AboutPage() {
   return (
     <div className="inner-page">
-      <section className="inner-hero page-wrap">
+      <section className="inner-hero about-hero page-wrap">
         <div className="about-hero-grid">
           <div className="about-hero-copy">
             <div className="section-kicker"><span>01</span> About</div>
