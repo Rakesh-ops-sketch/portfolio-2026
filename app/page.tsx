@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import {
   ArrowUpRight,
   Check,
@@ -6,6 +7,7 @@ import {
   Layers3,
   Mail,
   MapPin,
+  Quote,
   Smartphone,
   Sparkles,
   Users2,
@@ -67,6 +69,43 @@ const capabilities = [
     title: "Technical leadership",
     copy: "Creating clarity across engineering, QA, deployment, and stakeholder teams to move complex programs forward.",
   },
+];
+
+// Add more real testimonials here as they come in — quote, name, role.
+// The commented "Add a..." entries below are placeholders, not real
+// feedback — fill them in (or remove them) before this goes live.
+const testimonials = [
+  {
+    id: "divya",
+    quote: "Rakesh is one of the most supportive and approachable leads I've worked with. He brings strong technical expertise to the table, but what stands out most is how generously he shares that knowledge—whether it's patiently explaining a concept from the very basics or breaking down a complex task into clear, actionable pieces. He gives us the ownership to solve and grow while providing the right guidance when we need it, which makes him not just a great lead, but someone who genuinely helps the people around him become better.",
+    name: "Divya",
+    role: "Senior SDE, Educational Initiatives Pvt Ltd",
+  },
+  {
+    id: "kartik",
+    quote: "Working with Rakesh was a great experience. He understands requirements quickly, and always focuses on delivering efficient and scalable solutions.",
+    name: "Kartik Jha",
+    role: "Assistant Engineering Manager, Educational Initiatives Pvt Ltd",
+  },
+  // {
+  //   id: "placeholder-peer",
+  //   quote: "Add a quote from a peer or teammate — something about how you collaborate day to day.",
+  //   name: "Add name",
+  //   role: "Add role · Company",
+  // },
+  // {
+  //   id: "placeholder-report",
+  //   quote: "Add a quote from someone you've managed or mentored — what it's like being led by you.",
+  //   name: "Add name",
+  //   role: "Add role · Company",
+  // },
+  
+  // {
+  //   id: "placeholder-extra",
+  //   quote: "Add one more quote here to round out the loop.",
+  //   name: "Add name",
+  //   role: "Add role · Company",
+  // },
 ];
 
 export const metadata = {
@@ -277,6 +316,41 @@ export default function Home() {
               ))}
             </CaseStudyReveal>
           </div>
+        </div>
+      </section>
+
+      <section id="testimonials" className="testimonials-section scroll-mt-20">
+        <div className="page-wrap section-pad">
+          <div className="section-kicker"><span>05</span> What people say</div>
+          <div className="testimonials-intro mt-10 md:mt-16">
+            <CaseStudyReveal direction="left">
+              <WordReveal as="h2" className="display-heading" text="People I've worked with, in their own words." />
+            </CaseStudyReveal>
+            <CaseStudyReveal direction="right" delay={.1} className="testimonial-visual">
+              <Image
+                src="/testimonial-day-in-life.png"
+                alt="A three-panel comic of a software engineer's day: starting the day with a full task list, working through a tricky build failure with teammates cheering the fix along, and shipping a feature that reaches real users."
+                width={900}
+                height={1350}
+              />
+            </CaseStudyReveal>
+          </div>
+
+          <CaseStudyReveal className="testimonial-grid mt-12 md:mt-16" delay={.1}>
+            {testimonials.map((t, index) => (
+              <figure key={t.id} className="testimonial-card">
+                <Quote className="testimonial-card-mark" aria-hidden="true" />
+                <span className="testimonial-card-index">0{index + 1}</span>
+                <blockquote>{t.quote}</blockquote>
+                <figcaption>
+                  <span className="testimonial-avatar" aria-hidden="true">
+                    {t.name.split(" ").map((part) => part[0]).slice(0, 2).join("")}
+                  </span>
+                  <span className="testimonial-byline"><strong>{t.name}</strong><span>{t.role}</span></span>
+                </figcaption>
+              </figure>
+            ))}
+          </CaseStudyReveal>
         </div>
       </section>
 

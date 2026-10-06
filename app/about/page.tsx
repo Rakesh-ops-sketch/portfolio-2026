@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { ArrowUpRight, MapPin } from "lucide-react";
 import { Reveal, WordReveal } from "@/components/motion-primitives";
 
@@ -11,11 +12,19 @@ export default function AboutPage() {
   return (
     <div className="inner-page">
       <section className="inner-hero page-wrap">
-        <div className="section-kicker"><span>01</span> About</div>
-        <WordReveal className="inner-title" text="Builder, leader, and systems thinker." delay={0.08} eager />
-        <div className="inner-hero-foot">
-          <p>I work across product, engineering, and operations to turn complicated field problems into dependable software.</p>
-          <span><MapPin className="size-4" /> Bengaluru, India</span>
+        <div className="about-hero-grid">
+          <div className="about-hero-copy">
+            <div className="section-kicker"><span>01</span> About</div>
+            <WordReveal className="inner-title" text="Builder, leader, and systems thinker." delay={0.08} eager />
+            <div className="inner-hero-foot">
+              <p>I work across product, engineering, and operations to turn complicated field problems into dependable software.</p>
+              <span><MapPin className="size-4" /> Bengaluru, India</span>
+            </div>
+          </div>
+          <div className="about-hero-visual" aria-hidden="true">
+            <Image src="/about-illustration-light.png" alt="" width={420} height={504} className="block dark:hidden" priority />
+            <Image src="/about-illustration-dark.png" alt="" width={420} height={504} className="hidden dark:block" priority />
+          </div>
         </div>
       </section>
 

@@ -2,7 +2,8 @@
 
 import { useState } from "react";
 import { ArrowDown, ArrowUpRight } from "lucide-react";
-import { motion, useReducedMotion, useScroll, useTransform } from "motion/react";
+import { motion, useScroll, useTransform } from "motion/react";
+import { useReducedMotion } from "@/lib/use-reduced-motion";
 
 const lines = [
   ["Software", "for", "demanding"],

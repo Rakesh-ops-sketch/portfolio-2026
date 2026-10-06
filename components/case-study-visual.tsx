@@ -1,7 +1,8 @@
 "use client";
 
 import { Archive, Database, RefreshCw, Server, Smartphone } from "lucide-react";
-import { motion, useReducedMotion } from "motion/react";
+import { motion } from "motion/react";
+import { useReducedMotion } from "@/lib/use-reduced-motion";
 
 const stages = [
   { icon: Smartphone, label: "Assessment app", detail: "Field capture" },

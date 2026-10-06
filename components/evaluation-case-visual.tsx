@@ -1,7 +1,8 @@
 "use client";
 
 import { Clock3, Database, Monitor, Radio, RefreshCw, Server, Waypoints } from "lucide-react";
-import { motion, useReducedMotion } from "motion/react";
+import { motion } from "motion/react";
+import { useReducedMotion } from "@/lib/use-reduced-motion";
 
 function Connector({ bidirectional = false }: { bidirectional?: boolean }) {
   const reduceMotion = useReducedMotion();

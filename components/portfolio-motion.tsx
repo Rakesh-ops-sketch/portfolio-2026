@@ -1,7 +1,8 @@
 "use client";
 
 import { useEffect } from "react";
-import { motion, useReducedMotion } from "motion/react";
+import { motion } from "motion/react";
+import { useReducedMotion } from "@/lib/use-reduced-motion";
 
 export function PortfolioMotion() {
   const reduceMotion = useReducedMotion();

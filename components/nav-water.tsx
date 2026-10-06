@@ -22,14 +22,29 @@ export function NavWater() {
     let frame = 0, previous = 0, lastSplash = 0;
     let dark = document.documentElement.classList.contains("dark");
 
+    // Resizing the canvas backing store (even to the same value) wipes the
+    // bitmap. Only touch it when the pixel size actually changed, and do it
+    // inside the draw frame so a resize and its repaint land atomically —
+    // otherwise a mid-transition ResizeObserver tick (e.g. the header
+    // collapsing on scroll) clears the canvas a frame before it repaints,
+    // which reads as a flicker.
+    let pendingResize = false;
+    const applyCanvasSize = () => {
+      const ratio = Math.min(devicePixelRatio || 1, 2);
+      const w = Math.round(width * ratio);
+      const h = Math.round(height * ratio);
+      if (canvas.width !== w || canvas.height !== h) {
+        canvas.width = w;
+        canvas.height = h;
+      }
+      ctx.setTransform(ratio, 0, 0, ratio, 0, 0);
+      pendingResize = false;
+    };
     const measure = () => {
       const rect = canvas.getBoundingClientRect();
       width = rect.width;
       height = rect.height;
-      const ratio = Math.min(devicePixelRatio || 1, 2);
-      canvas.width = Math.round(width * ratio);
-      canvas.height = Math.round(height * ratio);
-      ctx.setTransform(ratio, 0, 0, ratio, 0, 0);
+      pendingResize = true;
       update();
     };
     const update = () => {
@@ -39,6 +54,7 @@ export function NavWater() {
     };
     const draw = (time: number) => {
       frame = 0;
+      if (pendingResize) applyCanvasSize();
       const dt = Math.min((time - previous) / 16.667 || 1, 2);
       previous = time;
       const before = level;
@@ -80,9 +96,12 @@ export function NavWater() {
         ctx.lineTo(0, 0);
         ctx.closePath();
         const water = ctx.createLinearGradient(0, 0, 0, height);
-        water.addColorStop(0, dark ? "rgba(180,203,206,.045)" : "rgba(156,181,185,.035)");
-        water.addColorStop(.5, dark ? "rgba(133,170,177,.065)" : "rgba(131,165,174,.065)");
-        water.addColorStop(1, dark ? "rgba(172,202,206,.10)" : "rgba(148,179,185,.10)");
+        // Copper accent (#a65332 light / #d38b67 dark) to match the rest of
+        // the site's palette, deepening toward rgba(126,58,35,…) at the
+        // bottom edge the way the hero ambient glows do.
+        water.addColorStop(0, dark ? "rgba(211,139,103,.05)" : "rgba(166,83,50,.10)");
+        water.addColorStop(.5, dark ? "rgba(211,139,103,.09)" : "rgba(180,91,57,.20)");
+        water.addColorStop(1, dark ? "rgba(180,91,57,.14)" : "rgba(126,58,35,.30)");
         ctx.fillStyle = water; ctx.fill();
         ctx.save(); ctx.clip();
         // Broad reflected ribbons bend with the surface's residual energy.
@@ -92,20 +111,20 @@ export function NavWater() {
             const y = height * (.25 + j * .5) + Math.sin(x * .018 + j * 2 + points[10].offset * .06) * 2;
             if (x === 0) ctx.moveTo(x, y); else ctx.lineTo(x, y);
           }
-          ctx.strokeStyle = dark ? "rgba(211,227,230,.055)" : "rgba(255,255,255,.14)";
+          ctx.strokeStyle = dark ? "rgba(238,201,168,.09)" : "rgba(211,139,103,.22)";
           ctx.lineWidth = .75; ctx.stroke();
         }
         ctx.restore();
         if (target < 1 || Math.abs(target - level) > .001) {
-          ctx.beginPath(); trace(); ctx.strokeStyle = dark ? "rgba(207,229,234,.28)" : "rgba(255,255,255,.48)";
-          ctx.lineWidth = 1; ctx.shadowColor = "rgba(174,202,209,.15)"; ctx.shadowBlur = 3; ctx.stroke(); ctx.shadowBlur = 0;
+          ctx.beginPath(); trace(); ctx.strokeStyle = dark ? "rgba(226,166,133,.35)" : "rgba(140,66,38,.55)";
+          ctx.lineWidth = 1; ctx.shadowColor = dark ? "rgba(211,139,103,.25)" : "rgba(166,83,50,.28)"; ctx.shadowBlur = 3; ctx.stroke(); ctx.shadowBlur = 0;
         }
       }
       drops = drops.filter(d => d.life > 0);
       for (const d of drops) {
         d.x += d.vx * dt; d.y += d.vy * dt; d.vy += .12 * dt; d.life -= .025 * dt;
         ctx.beginPath(); ctx.ellipse(d.x, d.y, 1.4, 2.3, -.4, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(${dark ? "173,231,242" : "72,164,187"},${d.life * .65})`; ctx.fill();
+        ctx.fillStyle = `rgba(${dark ? "226,166,133" : "166,83,50"},${d.life * .65})`; ctx.fill();
       }
       const moving = Math.abs(target - level) > .00005 || points.some(p => Math.abs(p.velocity) + Math.abs(p.offset) > .03) || drops.length > 0;
       if (moving && !reduced.matches) frame = requestAnimationFrame(draw);

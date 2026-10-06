@@ -101,6 +101,7 @@ export default function RootLayout({
       </head>
       <body
         className={`${balooThambi.variable} ${geistMono.variable} min-h-screen bg-background text-foreground antialiased`}
+        suppressHydrationWarning
       >
         <PortfolioMotion />
         <div className="flex min-h-screen flex-col">
