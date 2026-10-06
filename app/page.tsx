@@ -76,6 +76,12 @@ const capabilities = [
 // feedback — fill them in (or remove them) before this goes live.
 const testimonials = [
   {
+    id: "gayathre",
+    quote: "Working with Rakesh has been a great learning experience. He was my first senior and has always been someone I could rely on for his knowledge, guidance, and calm approach. Even during high-pressure situations and urgent field requirements, he handled things calmly and efficiently, resolving issues quickly without letting the pressure affect the quality of his work. His expertise and willingness to help have made a significant impact on my learning and growth.",
+    name: "Gayathre Ranga Sri R",
+    role: "SDE 2, Educational Initiatives Pvt Ltd",
+  },
+  {
     id: "divya",
     quote: "Rakesh is one of the most supportive and approachable leads I've worked with. He brings strong technical expertise to the table, but what stands out most is how generously he shares that knowledge—whether it's patiently explaining a concept from the very basics or breaking down a complex task into clear, actionable pieces. He gives us the ownership to solve and grow while providing the right guidance when we need it, which makes him not just a great lead, but someone who genuinely helps the people around him become better.",
     name: "Divya",
@@ -265,9 +271,81 @@ export default function Home() {
         </div>
       </section>
 
+      <section id="etalk" className="etalk-section scroll-mt-20">
+        <div className="page-wrap section-pad">
+          <div className="section-kicker"><span>03</span> Venture in progress</div>
+
+          <div className="etalk-hero mt-10 md:mt-16">
+            <CaseStudyReveal direction="left" className="etalk-intro">
+              <p className="etalk-overline">CTO · March 2026 — Present</p>
+              <WordReveal as="h2" text="E‑Talk" />
+              <h3>English confidence, built from an Odisha-first perspective.</h3>
+              <p>Leading the product and engineering of an AI-powered English-learning platform—from the public website and Flutter app to the backend, content CMS, and generation infrastructure.</p>
+              <div className="etalk-tech-list">
+                {[
+                  "Next.js",
+                  "React",
+                  "Flutter",
+                  "Node.js / Express",
+                  "TypeScript",
+                  "MongoDB",
+                  "Google Cloud",
+                ].map((tech) => <span key={tech}>{tech}</span>)}
+              </div>
+              <Link href="https://www.e-talk.in/en" target="_blank" rel="noreferrer" className="etalk-link">
+                Visit E‑Talk <ArrowUpRight />
+              </Link>
+            </CaseStudyReveal>
+
+            <CaseStudyReveal direction="right" delay={.08} className="etalk-positioning">
+              <span>Product direction</span>
+              <strong>Odia → English</strong>
+              <p>Personal learning paths, relatable real-life scenarios, and AI-assisted speaking practice designed around each learner&apos;s level and goals.</p>
+              <div><b>PRE-LAUNCH</b><small>Lesson generation → internal testing</small></div>
+            </CaseStudyReveal>
+          </div>
+
+          <CaseStudyReveal className="etalk-metrics" delay={.08}>
+            <div><strong>138</strong><span>canonical topics</span></div>
+            <div><strong>12</strong><span>onboarding goals</span></div>
+            <div><strong>60–70</strong><span>topics per learner roadmap</span></div>
+            <div><strong>7</strong><span>CEFR bands · A1 to B2</span></div>
+          </CaseStudyReveal>
+
+          <CaseStudyReveal className="etalk-cms" delay={.1}>
+            <div className="etalk-cms-copy">
+              <span>01 / Generation infrastructure</span>
+              <h3>A content engine built for quality, cost, and recovery.</h3>
+              <p>I reduced an initial spine of 631 topics to 138 reusable canonical topics that can still form unique, goal-relevant roadmaps for individual learners. The CMS coordinates batch generation, review, approval, and publishing without discarding valid work when one asset fails.</p>
+              <ul>
+                <li>GPT Terra for lesson generation</li>
+                <li>GPT Image Sunburst for lesson imagery</li>
+                <li>Granular retries preserve successful lessons and assets</li>
+                <li>Live queue monitoring surfaces failures and repair states</li>
+              </ul>
+            </div>
+            <div className="etalk-cms-visual">
+              <Image
+                src="/work/etalk-cms-redacted.png"
+                alt="Redacted E-Talk CMS bulk generation monitor showing queue progress, review states, and granular failure recovery."
+                width={1664}
+                height={928}
+              />
+              <span>Proprietary topic names and lesson content have been anonymized.</span>
+            </div>
+          </CaseStudyReveal>
+
+          <CaseStudyReveal className="etalk-detail-grid" delay={.12}>
+            <article><span>02 / Learning design</span><h3>Personal without generating everything twice</h3><p>Roadmaps combine CEFR progression, learner goals, Odisha-specific situations, useful distractors, and topic uniqueness—sharing a controlled content pool while preserving a tailored experience.</p></article>
+            <article><span>03 / Full product ownership</span><h3>One system across every surface</h3><p>Built the launch website, Flutter application, Node/Express APIs, MongoDB data layer, payment flow, learner roadmap, question experiences, progress tracking, and the internal content platform.</p></article>
+            <article><span>04 / Next constraint</span><h3>Scaling toward sustainable economics</h3><p>Current work is focused on infrastructure cost after launch and finding the right balance between introductory pricing, AI usage, operational cost, and sustainable revenue.</p></article>
+          </CaseStudyReveal>
+        </div>
+      </section>
+
       <section id="skills" className="capabilities-section scroll-mt-20">
         <div className="page-wrap section-pad">
-          <div className="section-kicker"><span>03</span> What I bring</div>
+          <div className="section-kicker"><span>04</span> What I bring</div>
           <CaseStudyReveal className="capabilities-heading mt-10 md:mt-16">
             <WordReveal as="h2" className="display-heading" text="Direction for the team. Depth in the implementation." />
             <p>I work across the product stack—from the interface people touch to the architecture, delivery systems, and engineering practices that keep it dependable.</p>
@@ -297,7 +375,7 @@ export default function Home() {
 
       <section id="experience" className="experience-section scroll-mt-20">
         <div className="page-wrap section-pad">
-          <div className="section-kicker section-kicker-dark"><span>04</span> Career ladder</div>
+          <div className="section-kicker section-kicker-dark"><span>05</span> Career ladder</div>
           <div className="experience-layout mt-10 lg:mt-16">
             <CaseStudyReveal className="experience-intro" direction="left">
               <p className="experience-overline">March 2022 — Present</p>
@@ -321,24 +399,21 @@ export default function Home() {
 
       <section id="testimonials" className="testimonials-section scroll-mt-20">
         <div className="page-wrap section-pad">
-          <div className="section-kicker"><span>05</span> What people say</div>
+          <div className="section-kicker"><span>06</span> What people say</div>
           <div className="testimonials-intro mt-10 md:mt-16">
-            <CaseStudyReveal direction="left">
+            <CaseStudyReveal direction="left" className="testimonials-intro-copy">
+              <p className="testimonials-overline">Leadership, seen from the team</p>
               <WordReveal as="h2" className="display-heading" text="People I've worked with, in their own words." />
             </CaseStudyReveal>
-            <CaseStudyReveal direction="right" delay={.1} className="testimonial-visual">
-              <Image
-                src="/testimonial-day-in-life.png"
-                alt="A three-panel comic of a software engineer's day: starting the day with a full task list, working through a tricky build failure with teammates cheering the fix along, and shipping a feature that reaches real users."
-                width={900}
-                height={1350}
-              />
+            <CaseStudyReveal direction="right" delay={.1} className="testimonials-intro-note">
+              <span>03 voices</span>
+              <p>The clearest measure of leadership is the confidence, ownership, and growth it creates in others.</p>
             </CaseStudyReveal>
           </div>
 
           <CaseStudyReveal className="testimonial-grid mt-12 md:mt-16" delay={.1}>
             {testimonials.map((t, index) => (
-              <figure key={t.id} className="testimonial-card">
+              <figure key={t.id} className={`testimonial-card${index === 0 ? " testimonial-card-featured" : ""}`}>
                 <Quote className="testimonial-card-mark" aria-hidden="true" />
                 <span className="testimonial-card-index">0{index + 1}</span>
                 <blockquote>{t.quote}</blockquote>
