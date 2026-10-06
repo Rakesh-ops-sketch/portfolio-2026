@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import dynamic from "next/dynamic";
 import { Gamepad2, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
@@ -11,7 +12,7 @@ import {
     DialogTitle,
     DialogTrigger,
 } from "@/components/ui/dialog";
-import { MemoryGame } from "@/components/memory-game";
+const MemoryGame = dynamic(() => import("@/components/memory-game").then((mod) => mod.MemoryGame));
 
 export function MemoryGameModal() {
     const [open, setOpen] = useState(false);

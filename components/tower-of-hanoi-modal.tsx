@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import dynamic from "next/dynamic";
 import { Layers, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
@@ -11,7 +12,7 @@ import {
     DialogTitle,
     DialogTrigger,
 } from "@/components/ui/dialog";
-import { TowerOfHanoi } from "@/components/tower-of-hanoi";
+const TowerOfHanoi = dynamic(() => import("@/components/tower-of-hanoi").then((mod) => mod.TowerOfHanoi));
 
 export function TowerOfHanoiModal() {
     const [open, setOpen] = useState(false);

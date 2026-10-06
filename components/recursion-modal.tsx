@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import dynamic from "next/dynamic";
 import { GitBranch, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
@@ -11,7 +12,7 @@ import {
     DialogTitle,
     DialogTrigger,
 } from "@/components/ui/dialog";
-import { RecursionVisualizer } from "@/components/recursion-visualizer";
+const RecursionVisualizer = dynamic(() => import("@/components/recursion-visualizer").then((mod) => mod.RecursionVisualizer));
 
 export function RecursionModal() {
     const [open, setOpen] = useState(false);

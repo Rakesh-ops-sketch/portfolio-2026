@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import dynamic from "next/dynamic";
 import { Timer, Activity } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
@@ -11,7 +12,7 @@ import {
     DialogTitle,
     DialogTrigger,
 } from "@/components/ui/dialog";
-import { PromiseVisualizer } from "@/components/promise-visualizer";
+const PromiseVisualizer = dynamic(() => import("@/components/promise-visualizer").then((mod) => mod.PromiseVisualizer));
 
 export function PromiseModal() {
     const [open, setOpen] = useState(false);

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import dynamic from "next/dynamic";
 import { Crown, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
@@ -11,7 +12,7 @@ import {
     DialogTitle,
     DialogTrigger,
 } from "@/components/ui/dialog";
-import { NQueensVisualizer } from "@/components/nqueens-visualizer";
+const NQueensVisualizer = dynamic(() => import("@/components/nqueens-visualizer").then((mod) => mod.NQueensVisualizer));
 
 export function NQueensModal() {
     const [open, setOpen] = useState(false);
