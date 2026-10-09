@@ -14,8 +14,8 @@ return (<section className="work-featured-section"><div className="page-wrap sec
 
       {projectRecords(data.projects, shared.projects).map(project => <ProjectTemplate key={String(project.id)} project={project} variant="work" shared={shared} />)}
 
-      
 
-      
+
+
     </div></section>);
 }

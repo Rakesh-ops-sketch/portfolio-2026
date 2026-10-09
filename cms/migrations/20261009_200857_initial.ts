@@ -37,7 +37,7 @@ export async function up({ db }: MigrateUpArgs): Promise<void> {
     "created_at" timestamp(3) with time zone,
     "expires_at" timestamp(3) with time zone NOT NULL
   );
-  
+
   CREATE TABLE "users" (
     "id" serial PRIMARY KEY NOT NULL,
     "name" varchar NOT NULL,
@@ -52,7 +52,7 @@ export async function up({ db }: MigrateUpArgs): Promise<void> {
     "login_attempts" numeric DEFAULT 0,
     "lock_until" timestamp(3) with time zone
   );
-  
+
   CREATE TABLE "pages" (
     "id" serial PRIMARY KEY NOT NULL,
     "title" varchar,
@@ -67,7 +67,7 @@ export async function up({ db }: MigrateUpArgs): Promise<void> {
     "created_at" timestamp(3) with time zone DEFAULT now() NOT NULL,
     "_status" "enum_pages_status" DEFAULT 'draft'
   );
-  
+
   CREATE TABLE "_pages_v" (
     "id" serial PRIMARY KEY NOT NULL,
     "parent_id" integer,
@@ -87,14 +87,14 @@ export async function up({ db }: MigrateUpArgs): Promise<void> {
     "latest" boolean,
     "autosave" boolean
   );
-  
+
   CREATE TABLE "projects_technologies" (
     "_order" integer NOT NULL,
     "_parent_id" integer NOT NULL,
     "id" varchar PRIMARY KEY NOT NULL,
     "value" varchar
   );
-  
+
   CREATE TABLE "projects" (
     "id" serial PRIMARY KEY NOT NULL,
     "title" varchar,
@@ -108,7 +108,7 @@ export async function up({ db }: MigrateUpArgs): Promise<void> {
     "created_at" timestamp(3) with time zone DEFAULT now() NOT NULL,
     "_status" "enum_projects_status" DEFAULT 'draft'
   );
-  
+
   CREATE TABLE "_projects_v_version_technologies" (
     "_order" integer NOT NULL,
     "_parent_id" integer NOT NULL,
@@ -116,7 +116,7 @@ export async function up({ db }: MigrateUpArgs): Promise<void> {
     "value" varchar,
     "_uuid" varchar
   );
-  
+
   CREATE TABLE "_projects_v" (
     "id" serial PRIMARY KEY NOT NULL,
     "parent_id" integer,
@@ -135,14 +135,14 @@ export async function up({ db }: MigrateUpArgs): Promise<void> {
     "latest" boolean,
     "autosave" boolean
   );
-  
+
   CREATE TABLE "career_responsibilities" (
     "_order" integer NOT NULL,
     "_parent_id" integer NOT NULL,
     "id" varchar PRIMARY KEY NOT NULL,
     "value" varchar
   );
-  
+
   CREATE TABLE "career" (
     "id" serial PRIMARY KEY NOT NULL,
     "role" varchar,
@@ -159,7 +159,7 @@ export async function up({ db }: MigrateUpArgs): Promise<void> {
     "created_at" timestamp(3) with time zone DEFAULT now() NOT NULL,
     "_status" "enum_career_status" DEFAULT 'draft'
   );
-  
+
   CREATE TABLE "_career_v_version_responsibilities" (
     "_order" integer NOT NULL,
     "_parent_id" integer NOT NULL,
@@ -167,7 +167,7 @@ export async function up({ db }: MigrateUpArgs): Promise<void> {
     "value" varchar,
     "_uuid" varchar
   );
-  
+
   CREATE TABLE "_career_v" (
     "id" serial PRIMARY KEY NOT NULL,
     "parent_id" integer,
@@ -189,7 +189,7 @@ export async function up({ db }: MigrateUpArgs): Promise<void> {
     "latest" boolean,
     "autosave" boolean
   );
-  
+
   CREATE TABLE "testimonials" (
     "id" serial PRIMARY KEY NOT NULL,
     "name" varchar,
@@ -200,7 +200,7 @@ export async function up({ db }: MigrateUpArgs): Promise<void> {
     "created_at" timestamp(3) with time zone DEFAULT now() NOT NULL,
     "_status" "enum_testimonials_status" DEFAULT 'draft'
   );
-  
+
   CREATE TABLE "_testimonials_v" (
     "id" serial PRIMARY KEY NOT NULL,
     "parent_id" integer,
@@ -216,7 +216,7 @@ export async function up({ db }: MigrateUpArgs): Promise<void> {
     "latest" boolean,
     "autosave" boolean
   );
-  
+
   CREATE TABLE "playground" (
     "id" serial PRIMARY KEY NOT NULL,
     "title" varchar,
@@ -229,7 +229,7 @@ export async function up({ db }: MigrateUpArgs): Promise<void> {
     "created_at" timestamp(3) with time zone DEFAULT now() NOT NULL,
     "_status" "enum_playground_status" DEFAULT 'draft'
   );
-  
+
   CREATE TABLE "_playground_v" (
     "id" serial PRIMARY KEY NOT NULL,
     "parent_id" integer,
@@ -247,7 +247,7 @@ export async function up({ db }: MigrateUpArgs): Promise<void> {
     "latest" boolean,
     "autosave" boolean
   );
-  
+
   CREATE TABLE "media" (
     "id" serial PRIMARY KEY NOT NULL,
     "alt" varchar NOT NULL,
@@ -277,20 +277,20 @@ export async function up({ db }: MigrateUpArgs): Promise<void> {
     "sizes_large_filesize" numeric,
     "sizes_large_filename" varchar
   );
-  
+
   CREATE TABLE "payload_kv" (
     "id" serial PRIMARY KEY NOT NULL,
     "key" varchar NOT NULL,
     "data" jsonb NOT NULL
   );
-  
+
   CREATE TABLE "payload_locked_documents" (
     "id" serial PRIMARY KEY NOT NULL,
     "global_slug" varchar,
     "updated_at" timestamp(3) with time zone DEFAULT now() NOT NULL,
     "created_at" timestamp(3) with time zone DEFAULT now() NOT NULL
   );
-  
+
   CREATE TABLE "payload_locked_documents_rels" (
     "id" serial PRIMARY KEY NOT NULL,
     "order" integer,
@@ -304,7 +304,7 @@ export async function up({ db }: MigrateUpArgs): Promise<void> {
     "playground_id" integer,
     "media_id" integer
   );
-  
+
   CREATE TABLE "payload_preferences" (
     "id" serial PRIMARY KEY NOT NULL,
     "key" varchar,
@@ -312,7 +312,7 @@ export async function up({ db }: MigrateUpArgs): Promise<void> {
     "updated_at" timestamp(3) with time zone DEFAULT now() NOT NULL,
     "created_at" timestamp(3) with time zone DEFAULT now() NOT NULL
   );
-  
+
   CREATE TABLE "payload_preferences_rels" (
     "id" serial PRIMARY KEY NOT NULL,
     "order" integer,
@@ -320,7 +320,7 @@ export async function up({ db }: MigrateUpArgs): Promise<void> {
     "path" varchar NOT NULL,
     "users_id" integer
   );
-  
+
   CREATE TABLE "payload_migrations" (
     "id" serial PRIMARY KEY NOT NULL,
     "name" varchar,
@@ -328,7 +328,7 @@ export async function up({ db }: MigrateUpArgs): Promise<void> {
     "updated_at" timestamp(3) with time zone DEFAULT now() NOT NULL,
     "created_at" timestamp(3) with time zone DEFAULT now() NOT NULL
   );
-  
+
   CREATE TABLE "site_navigation" (
     "_order" integer NOT NULL,
     "_parent_id" integer NOT NULL,
@@ -336,7 +336,7 @@ export async function up({ db }: MigrateUpArgs): Promise<void> {
     "label" varchar,
     "href" varchar
   );
-  
+
   CREATE TABLE "site_socials" (
     "_order" integer NOT NULL,
     "_parent_id" integer NOT NULL,
@@ -344,7 +344,7 @@ export async function up({ db }: MigrateUpArgs): Promise<void> {
     "label" varchar,
     "href" varchar
   );
-  
+
   CREATE TABLE "site" (
     "id" serial PRIMARY KEY NOT NULL,
     "name" varchar,
@@ -360,7 +360,7 @@ export async function up({ db }: MigrateUpArgs): Promise<void> {
     "updated_at" timestamp(3) with time zone,
     "created_at" timestamp(3) with time zone
   );
-  
+
   CREATE TABLE "_site_v_version_navigation" (
     "_order" integer NOT NULL,
     "_parent_id" integer NOT NULL,
@@ -369,7 +369,7 @@ export async function up({ db }: MigrateUpArgs): Promise<void> {
     "href" varchar,
     "_uuid" varchar
   );
-  
+
   CREATE TABLE "_site_v_version_socials" (
     "_order" integer NOT NULL,
     "_parent_id" integer NOT NULL,
@@ -378,7 +378,7 @@ export async function up({ db }: MigrateUpArgs): Promise<void> {
     "href" varchar,
     "_uuid" varchar
   );
-  
+
   CREATE TABLE "_site_v" (
     "id" serial PRIMARY KEY NOT NULL,
     "version_name" varchar,
@@ -398,7 +398,7 @@ export async function up({ db }: MigrateUpArgs): Promise<void> {
     "latest" boolean,
     "autosave" boolean
   );
-  
+
   CREATE TABLE "design" (
     "id" serial PRIMARY KEY NOT NULL,
     "light_background" varchar DEFAULT '#ffffff',
@@ -424,7 +424,7 @@ export async function up({ db }: MigrateUpArgs): Promise<void> {
     "updated_at" timestamp(3) with time zone,
     "created_at" timestamp(3) with time zone
   );
-  
+
   CREATE TABLE "_design_v" (
     "id" serial PRIMARY KEY NOT NULL,
     "version_light_background" varchar DEFAULT '#ffffff',
@@ -454,7 +454,7 @@ export async function up({ db }: MigrateUpArgs): Promise<void> {
     "latest" boolean,
     "autosave" boolean
   );
-  
+
   ALTER TABLE "users_sessions" ADD CONSTRAINT "users_sessions_parent_id_fk" FOREIGN KEY ("_parent_id") REFERENCES "public"."users"("id") ON DELETE cascade ON UPDATE no action;
   ALTER TABLE "pages" ADD CONSTRAINT "pages_seo_image_id_media_id_fk" FOREIGN KEY ("seo_image_id") REFERENCES "public"."media"("id") ON DELETE set null ON UPDATE no action;
   ALTER TABLE "_pages_v" ADD CONSTRAINT "_pages_v_parent_id_pages_id_fk" FOREIGN KEY ("parent_id") REFERENCES "public"."pages"("id") ON DELETE set null ON UPDATE no action;
