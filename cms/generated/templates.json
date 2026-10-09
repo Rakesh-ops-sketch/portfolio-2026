@@ -1,0 +1,2227 @@
+[
+  {
+    "slug": "homeSection1",
+    "label": "Home · Hero",
+    "fields": [
+      {
+        "name": "field3",
+        "type": "textarea",
+        "label": "Engineering leader · Product builder"
+      },
+      {
+        "name": "field4",
+        "type": "textarea",
+        "label": "I'm Rakesh Biswal. I lead teams building dependable mobile and backend platforms for education programs operating at national scale."
+      },
+      {
+        "name": "field5",
+        "type": "textarea",
+        "label": "SCROLL TO DISCOVER"
+      },
+      {
+        "name": "field6",
+        "type": "textarea",
+        "label": "©"
+      },
+      {
+        "name": "field7",
+        "type": "textarea",
+        "label": "/ RB"
+      },
+      {
+        "name": "field8",
+        "type": "textarea",
+        "label": "Headline (one line per row)"
+      },
+      {
+        "name": "field9",
+        "type": "text",
+        "label": "Primary button label"
+      },
+      {
+        "name": "field10",
+        "type": "text",
+        "label": "Primary button URL"
+      },
+      {
+        "name": "field11",
+        "type": "text",
+        "label": "Secondary button label"
+      },
+      {
+        "name": "field12",
+        "type": "text",
+        "label": "Secondary button URL"
+      }
+    ],
+    "defaults": {
+      "field1": "Available for meaningful work",
+      "field2": "Bengaluru, India",
+      "field3": "Engineering leader · Product builder",
+      "field4": "I'm Rakesh Biswal. I lead teams building dependable mobile and backend platforms for education programs operating at national scale.",
+      "field5": "SCROLL TO DISCOVER",
+      "field6": "©",
+      "field7": "/ RB",
+      "field8": "Software for demanding\nenvironments, built to endure.",
+      "field9": "Explore my work",
+      "field10": "/work",
+      "field11": "Let's talk",
+      "field12": "mailto:hsekar.bat@gmail.com"
+    }
+  },
+  {
+    "slug": "homeSection2",
+    "label": "Home · Neev case study",
+    "fields": [
+      {
+        "name": "field1",
+        "type": "textarea",
+        "label": "01"
+      },
+      {
+        "name": "field2",
+        "type": "textarea",
+        "label": "Selected case study"
+      },
+      {
+        "name": "field3",
+        "type": "textarea",
+        "label": "National FLN platform"
+      },
+      {
+        "name": "field5",
+        "type": "textarea",
+        "label": "An offline-first foundational literacy and numeracy platform built for government-backed education programs operating across low-connectivity classrooms."
+      },
+      {
+        "name": "field6",
+        "type": "array",
+        "label": "Items",
+        "fields": [
+          {
+            "name": "value",
+            "type": "text",
+            "required": true
+          }
+        ]
+      },
+      {
+        "name": "field7",
+        "type": "textarea",
+        "label": "OFFLINE-FIRST FIELD SYSTEM / 2022—NOW"
+      },
+      {
+        "name": "field8",
+        "type": "textarea",
+        "label": "My role"
+      },
+      {
+        "name": "field9",
+        "type": "textarea",
+        "label": "Engineering Lead · Architecture & delivery"
+      },
+      {
+        "name": "field10",
+        "type": "textarea",
+        "label": "Core stack"
+      },
+      {
+        "name": "field11",
+        "type": "textarea",
+        "label": "React Native · Realm · Go/Gin · S3 · MongoDB"
+      },
+      {
+        "name": "field12",
+        "type": "array",
+        "label": "Items",
+        "fields": [
+          {
+            "name": "value",
+            "type": "textarea"
+          },
+          {
+            "name": "label",
+            "type": "textarea"
+          }
+        ]
+      },
+      {
+        "name": "field13",
+        "type": "textarea",
+        "label": "01 / Reliability"
+      },
+      {
+        "name": "field14",
+        "type": "textarea",
+        "label": "Resilient synchronization"
+      },
+      {
+        "name": "field15",
+        "type": "textarea",
+        "label": "Re-architected Go/Gin APIs and client-side retry workflows, taking observed development-stage data loss from 50–60% to zero in production validation."
+      },
+      {
+        "name": "field16",
+        "type": "textarea",
+        "label": "02 / Field stability"
+      },
+      {
+        "name": "field17",
+        "type": "textarea",
+        "label": "Built for difficult conditions"
+      },
+      {
+        "name": "field18",
+        "type": "textarea",
+        "label": "Hardened audio recording, autosave, crash recovery, and offline synchronization for assessment teams working with intermittent connectivity."
+      },
+      {
+        "name": "field19",
+        "type": "textarea",
+        "label": "03 / Modernization"
+      },
+      {
+        "name": "field20",
+        "type": "textarea",
+        "label": "A smaller, faster application"
+      },
+      {
+        "name": "field21",
+        "type": "textarea",
+        "label": "Migrated to React Native's New Architecture with TurboModules and C++ integrations, reducing the Android application from more than 100 MB to 48 MB."
+      },
+      {
+        "name": "field22",
+        "type": "array",
+        "label": "Items",
+        "fields": [
+          {
+            "name": "value",
+            "type": "text",
+            "required": true
+          }
+        ]
+      }
+    ],
+    "defaults": {
+      "field1": "01",
+      "field2": "Selected case study",
+      "field3": "National FLN platform",
+      "field4": "Ei Neev Assessments",
+      "field5": "An offline-first foundational literacy and numeracy platform built for government-backed education programs operating across low-connectivity classrooms.",
+      "field6": [
+        {
+          "value": "React Native"
+        },
+        {
+          "value": "Realm"
+        },
+        {
+          "value": "Go / Gin"
+        },
+        {
+          "value": "S3"
+        },
+        {
+          "value": "MongoDB"
+        }
+      ],
+      "field7": "OFFLINE-FIRST FIELD SYSTEM / 2022—NOW",
+      "field8": "My role",
+      "field9": "Engineering Lead · Architecture & delivery",
+      "field10": "Core stack",
+      "field11": "React Native · Realm · Go/Gin · S3 · MongoDB",
+      "field12": [
+        {
+          "value": "57K",
+          "label": "assessments delivered"
+        },
+        {
+          "value": "27.5K",
+          "label": "students supported"
+        },
+        {
+          "value": "4K",
+          "label": "schools reached"
+        },
+        {
+          "value": "11",
+          "label": "languages supported"
+        }
+      ],
+      "field13": "01 / Reliability",
+      "field14": "Resilient synchronization",
+      "field15": "Re-architected Go/Gin APIs and client-side retry workflows, taking observed development-stage data loss from 50–60% to zero in production validation.",
+      "field16": "02 / Field stability",
+      "field17": "Built for difficult conditions",
+      "field18": "Hardened audio recording, autosave, crash recovery, and offline synchronization for assessment teams working with intermittent connectivity.",
+      "field19": "03 / Modernization",
+      "field20": "A smaller, faster application",
+      "field21": "Migrated to React Native's New Architecture with TurboModules and C++ integrations, reducing the Android application from more than 100 MB to 48 MB.",
+      "field22": [
+        {
+          "value": "NIPUN Bharat delivery across Odisha, Uttar Pradesh, and Rajasthan"
+        },
+        {
+          "value": "Automated Bitbucket and Jenkins pipelines across QA, staging, and AWS production"
+        },
+        {
+          "value": "Roadmaps and releases aligned across product, QA, deployment, and government stakeholders"
+        }
+      ]
+    }
+  },
+  {
+    "slug": "homeSection3",
+    "label": "Home · Evaluator case study",
+    "fields": [
+      {
+        "name": "field1",
+        "type": "textarea",
+        "label": "02"
+      },
+      {
+        "name": "field2",
+        "type": "textarea",
+        "label": "Selected case study"
+      },
+      {
+        "name": "field3",
+        "type": "textarea",
+        "label": "Real-time scoring infrastructure"
+      },
+      {
+        "name": "field5",
+        "type": "textarea",
+        "label": "A high-throughput evaluator workspace designed to keep scoring fast, recoverable, and traceable while thousands of browser events compete for delivery."
+      },
+      {
+        "name": "field6",
+        "type": "array",
+        "label": "Items",
+        "fields": [
+          {
+            "name": "value",
+            "type": "text",
+            "required": true
+          }
+        ]
+      },
+      {
+        "name": "field7",
+        "type": "textarea",
+        "label": "The operating constraint"
+      },
+      {
+        "name": "field8",
+        "type": "textarea",
+        "label": "1K–2K"
+      },
+      {
+        "name": "field9",
+        "type": "textarea",
+        "label": "evaluators scoring concurrently"
+      },
+      {
+        "name": "field10",
+        "type": "textarea",
+        "label": "Every interaction must survive bursts, reconnects, and temporary delivery failures without slowing the evaluator down."
+      },
+      {
+        "name": "field11",
+        "type": "textarea",
+        "label": "System response"
+      },
+      {
+        "name": "field12",
+        "type": "textarea",
+        "label": "Browser-first reliability with controlled server delivery"
+      },
+      {
+        "name": "field13",
+        "type": "array",
+        "label": "Items",
+        "fields": [
+          {
+            "name": "value",
+            "type": "textarea"
+          },
+          {
+            "name": "label",
+            "type": "textarea"
+          }
+        ]
+      },
+      {
+        "name": "field14",
+        "type": "textarea",
+        "label": "01 / Data integrity"
+      },
+      {
+        "name": "field15",
+        "type": "textarea",
+        "label": "Autosave that handles evaluator bursts"
+      },
+      {
+        "name": "field16",
+        "type": "textarea",
+        "label": "Isolated browser events can send as single requests, while rapid activity forms a persistent queue that flushes after five seconds of inactivity, with retry handling for failed delivery."
+      },
+      {
+        "name": "field17",
+        "type": "textarea",
+        "label": "02 / Traceability"
+      },
+      {
+        "name": "field18",
+        "type": "textarea",
+        "label": "Every scoring decision has history"
+      },
+      {
+        "name": "field19",
+        "type": "textarea",
+        "label": "Added versioned scoring workflows, audit trails, evaluator activity tracking, and scrutiny controls for stronger quality and operational oversight."
+      },
+      {
+        "name": "field20",
+        "type": "textarea",
+        "label": "03 / Assisted scoring"
+      },
+      {
+        "name": "field21",
+        "type": "textarea",
+        "label": "AI support inside the workflow"
+      },
+      {
+        "name": "field22",
+        "type": "textarea",
+        "label": "Integrated Sarvam, Gemini Flash, and in-house models to support evaluators, shorten scoring cycles, and reduce scorer staffing requirements."
+      },
+      {
+        "name": "field23",
+        "type": "textarea",
+        "label": "04 / Live operations"
+      },
+      {
+        "name": "field24",
+        "type": "textarea",
+        "label": "Improvement without interruption"
+      },
+      {
+        "name": "field25",
+        "type": "textarea",
+        "label": "Improved evaluator UI and extended workflows while active scoring operations continued."
+      },
+      {
+        "name": "field26",
+        "type": "textarea",
+        "label": "Operational outcome"
+      },
+      {
+        "name": "field27",
+        "type": "textarea",
+        "label": "Scoring workflows could evolve without interrupting active evaluation operations, while version history, scrutiny controls, and evaluator activity remained visible."
+      }
+    ],
+    "defaults": {
+      "field1": "02",
+      "field2": "Selected case study",
+      "field3": "Real-time scoring infrastructure",
+      "field4": "Evaluator & Scoring Portal",
+      "field5": "A high-throughput evaluator workspace designed to keep scoring fast, recoverable, and traceable while thousands of browser events compete for delivery.",
+      "field6": [
+        {
+          "value": "Full-duplex WebSockets"
+        },
+        {
+          "value": "Persistent event queues"
+        },
+        {
+          "value": "Audit trails"
+        },
+        {
+          "value": "AI-assisted scoring"
+        }
+      ],
+      "field7": "The operating constraint",
+      "field8": "1K–2K",
+      "field9": "evaluators scoring concurrently",
+      "field10": "Every interaction must survive bursts, reconnects, and temporary delivery failures without slowing the evaluator down.",
+      "field11": "System response",
+      "field12": "Browser-first reliability with controlled server delivery",
+      "field13": [
+        {
+          "value": "51,773",
+          "label": "total assessments scored"
+        },
+        {
+          "value": "515,289",
+          "label": "total subtests completed"
+        },
+        {
+          "value": "20,455",
+          "label": "students represented"
+        }
+      ],
+      "field14": "01 / Data integrity",
+      "field15": "Autosave that handles evaluator bursts",
+      "field16": "Isolated browser events can send as single requests, while rapid activity forms a persistent queue that flushes after five seconds of inactivity, with retry handling for failed delivery.",
+      "field17": "02 / Traceability",
+      "field18": "Every scoring decision has history",
+      "field19": "Added versioned scoring workflows, audit trails, evaluator activity tracking, and scrutiny controls for stronger quality and operational oversight.",
+      "field20": "03 / Assisted scoring",
+      "field21": "AI support inside the workflow",
+      "field22": "Integrated Sarvam, Gemini Flash, and in-house models to support evaluators, shorten scoring cycles, and reduce scorer staffing requirements.",
+      "field23": "04 / Live operations",
+      "field24": "Improvement without interruption",
+      "field25": "Improved evaluator UI and extended workflows while active scoring operations continued.",
+      "field26": "Operational outcome",
+      "field27": "Scoring workflows could evolve without interrupting active evaluation operations, while version history, scrutiny controls, and evaluator activity remained visible."
+    }
+  },
+  {
+    "slug": "homeSection4",
+    "label": "Home · E-Talk venture",
+    "fields": [
+      {
+        "name": "field1",
+        "type": "textarea",
+        "label": "03"
+      },
+      {
+        "name": "field2",
+        "type": "textarea",
+        "label": "Venture in progress"
+      },
+      {
+        "name": "field3",
+        "type": "textarea",
+        "label": "CTO · March 2026 — Present"
+      },
+      {
+        "name": "field5",
+        "type": "textarea",
+        "label": "English confidence, built from an Odisha-first perspective."
+      },
+      {
+        "name": "field6",
+        "type": "textarea",
+        "label": "Leading the product and engineering of an AI-powered English-learning platform—from the public website and Flutter app to the backend, content CMS, and generation infrastructure."
+      },
+      {
+        "name": "field7",
+        "type": "array",
+        "label": "Items",
+        "fields": [
+          {
+            "name": "value",
+            "type": "text",
+            "required": true
+          }
+        ]
+      },
+      {
+        "name": "field8",
+        "type": "text",
+        "label": "href: https://www.e-talk.in/en"
+      },
+      {
+        "name": "field9",
+        "type": "textarea",
+        "label": "Visit E‑Talk"
+      },
+      {
+        "name": "field10",
+        "type": "textarea",
+        "label": "Product direction"
+      },
+      {
+        "name": "field11",
+        "type": "textarea",
+        "label": "Odia → English"
+      },
+      {
+        "name": "field12",
+        "type": "textarea",
+        "label": "Personal learning paths, relatable real-life scenarios, and AI-assisted speaking practice designed around each learner's level and goals."
+      },
+      {
+        "name": "field13",
+        "type": "textarea",
+        "label": "PRE-LAUNCH"
+      },
+      {
+        "name": "field14",
+        "type": "textarea",
+        "label": "Lesson generation → internal testing"
+      },
+      {
+        "name": "field15",
+        "type": "textarea",
+        "label": "138"
+      },
+      {
+        "name": "field16",
+        "type": "textarea",
+        "label": "canonical topics"
+      },
+      {
+        "name": "field17",
+        "type": "textarea",
+        "label": "12"
+      },
+      {
+        "name": "field18",
+        "type": "textarea",
+        "label": "onboarding goals"
+      },
+      {
+        "name": "field19",
+        "type": "textarea",
+        "label": "60–70"
+      },
+      {
+        "name": "field20",
+        "type": "textarea",
+        "label": "topics per learner roadmap"
+      },
+      {
+        "name": "field21",
+        "type": "textarea",
+        "label": "7"
+      },
+      {
+        "name": "field22",
+        "type": "textarea",
+        "label": "CEFR bands · A1 to B2"
+      },
+      {
+        "name": "field23",
+        "type": "textarea",
+        "label": "01 / Generation infrastructure"
+      },
+      {
+        "name": "field24",
+        "type": "textarea",
+        "label": "A content engine built for quality, cost, and recovery."
+      },
+      {
+        "name": "field25",
+        "type": "textarea",
+        "label": "I reduced an initial spine of 631 topics to 138 reusable canonical topics that can still form unique, goal-relevant roadmaps for individual learners. The CMS coordinates batch generation, review, approval, and publishing without discarding valid work when one asset fails."
+      },
+      {
+        "name": "field26",
+        "type": "textarea",
+        "label": "GPT Terra for lesson generation"
+      },
+      {
+        "name": "field27",
+        "type": "textarea",
+        "label": "GPT Image Sunburst for lesson imagery"
+      },
+      {
+        "name": "field28",
+        "type": "textarea",
+        "label": "Granular retries preserve successful lessons and assets"
+      },
+      {
+        "name": "field29",
+        "type": "textarea",
+        "label": "Live queue monitoring surfaces failures and repair states"
+      },
+      {
+        "name": "field30",
+        "type": "upload",
+        "label": "src: /work/etalk-cms-redacted.png",
+        "relationTo": "media"
+      },
+      {
+        "name": "field31",
+        "type": "text",
+        "label": "alt: Redacted E-Talk CMS bulk generation monitor showing que"
+      },
+      {
+        "name": "field32",
+        "type": "textarea",
+        "label": "Proprietary topic names and lesson content have been anonymized."
+      },
+      {
+        "name": "field33",
+        "type": "textarea",
+        "label": "02 / Learning design"
+      },
+      {
+        "name": "field34",
+        "type": "textarea",
+        "label": "Personal without generating everything twice"
+      },
+      {
+        "name": "field35",
+        "type": "textarea",
+        "label": "Roadmaps combine CEFR progression, learner goals, Odisha-specific situations, useful distractors, and topic uniqueness—sharing a controlled content pool while preserving a tailored experience."
+      },
+      {
+        "name": "field36",
+        "type": "textarea",
+        "label": "03 / Full product ownership"
+      },
+      {
+        "name": "field37",
+        "type": "textarea",
+        "label": "One system across every surface"
+      },
+      {
+        "name": "field38",
+        "type": "textarea",
+        "label": "Built the launch website, Flutter application, Node/Express APIs, MongoDB data layer, payment flow, learner roadmap, question experiences, progress tracking, and the internal content platform."
+      },
+      {
+        "name": "field39",
+        "type": "textarea",
+        "label": "04 / Next constraint"
+      },
+      {
+        "name": "field40",
+        "type": "textarea",
+        "label": "Scaling toward sustainable economics"
+      },
+      {
+        "name": "field41",
+        "type": "textarea",
+        "label": "Current work is focused on infrastructure cost after launch and finding the right balance between introductory pricing, AI usage, operational cost, and sustainable revenue."
+      }
+    ],
+    "defaults": {
+      "field1": "03",
+      "field2": "Venture in progress",
+      "field3": "CTO · March 2026 — Present",
+      "field4": "E‑Talk",
+      "field5": "English confidence, built from an Odisha-first perspective.",
+      "field6": "Leading the product and engineering of an AI-powered English-learning platform—from the public website and Flutter app to the backend, content CMS, and generation infrastructure.",
+      "field7": [
+        {
+          "value": "Next.js"
+        },
+        {
+          "value": "React"
+        },
+        {
+          "value": "Flutter"
+        },
+        {
+          "value": "Node.js / Express"
+        },
+        {
+          "value": "TypeScript"
+        },
+        {
+          "value": "MongoDB"
+        },
+        {
+          "value": "Google Cloud"
+        }
+      ],
+      "field8": "https://www.e-talk.in/en",
+      "field9": "Visit E‑Talk",
+      "field10": "Product direction",
+      "field11": "Odia → English",
+      "field12": "Personal learning paths, relatable real-life scenarios, and AI-assisted speaking practice designed around each learner's level and goals.",
+      "field13": "PRE-LAUNCH",
+      "field14": "Lesson generation → internal testing",
+      "field15": "138",
+      "field16": "canonical topics",
+      "field17": "12",
+      "field18": "onboarding goals",
+      "field19": "60–70",
+      "field20": "topics per learner roadmap",
+      "field21": "7",
+      "field22": "CEFR bands · A1 to B2",
+      "field23": "01 / Generation infrastructure",
+      "field24": "A content engine built for quality, cost, and recovery.",
+      "field25": "I reduced an initial spine of 631 topics to 138 reusable canonical topics that can still form unique, goal-relevant roadmaps for individual learners. The CMS coordinates batch generation, review, approval, and publishing without discarding valid work when one asset fails.",
+      "field26": "GPT Terra for lesson generation",
+      "field27": "GPT Image Sunburst for lesson imagery",
+      "field28": "Granular retries preserve successful lessons and assets",
+      "field29": "Live queue monitoring surfaces failures and repair states",
+      "field30": "/work/etalk-cms-redacted.png",
+      "field31": "Redacted E-Talk CMS bulk generation monitor showing queue progress, review states, and granular failure recovery.",
+      "field32": "Proprietary topic names and lesson content have been anonymized.",
+      "field33": "02 / Learning design",
+      "field34": "Personal without generating everything twice",
+      "field35": "Roadmaps combine CEFR progression, learner goals, Odisha-specific situations, useful distractors, and topic uniqueness—sharing a controlled content pool while preserving a tailored experience.",
+      "field36": "03 / Full product ownership",
+      "field37": "One system across every surface",
+      "field38": "Built the launch website, Flutter application, Node/Express APIs, MongoDB data layer, payment flow, learner roadmap, question experiences, progress tracking, and the internal content platform.",
+      "field39": "04 / Next constraint",
+      "field40": "Scaling toward sustainable economics",
+      "field41": "Current work is focused on infrastructure cost after launch and finding the right balance between introductory pricing, AI usage, operational cost, and sustainable revenue."
+    }
+  },
+  {
+    "slug": "homeSection5",
+    "label": "Home · Capabilities",
+    "fields": [
+      {
+        "name": "field1",
+        "type": "textarea",
+        "label": "04"
+      },
+      {
+        "name": "field2",
+        "type": "textarea",
+        "label": "What I bring"
+      },
+      {
+        "name": "field3",
+        "type": "text",
+        "label": "text: Direction for the team. Depth in the implementation."
+      },
+      {
+        "name": "field4",
+        "type": "textarea",
+        "label": "I work across the product stack—from the interface people touch to the architecture, delivery systems, and engineering practices that keep it dependable."
+      },
+      {
+        "name": "field5",
+        "type": "text",
+        "label": "href: /playground"
+      },
+      {
+        "name": "field6",
+        "type": "textarea",
+        "label": "Interactive lab"
+      },
+      {
+        "name": "field7",
+        "type": "textarea",
+        "label": "See how I think in motion."
+      },
+      {
+        "name": "field8",
+        "type": "textarea",
+        "label": "Algorithms, games, and small experiments—built to be explored."
+      },
+      {
+        "name": "field9",
+        "type": "array",
+        "label": "capabilities",
+        "fields": [
+          {
+            "name": "icon",
+            "type": "select",
+            "options": [
+              "Layers3",
+              "Smartphone",
+              "Users2"
+            ]
+          },
+          {
+            "name": "number",
+            "type": "textarea"
+          },
+          {
+            "name": "title",
+            "type": "textarea"
+          },
+          {
+            "name": "copy",
+            "type": "textarea"
+          }
+        ]
+      }
+    ],
+    "defaults": {
+      "field1": "04",
+      "field2": "What I bring",
+      "field3": "Direction for the team. Depth in the implementation.",
+      "field4": "I work across the product stack—from the interface people touch to the architecture, delivery systems, and engineering practices that keep it dependable.",
+      "field5": "/playground",
+      "field6": "Interactive lab",
+      "field7": "See how I think in motion.",
+      "field8": "Algorithms, games, and small experiments—built to be explored.",
+      "field9": [
+        {
+          "icon": "Layers3",
+          "number": "01",
+          "title": "Systems architecture",
+          "copy": "Designing resilient platforms from product requirements through data models, APIs, sync protocols, and observability."
+        },
+        {
+          "icon": "Smartphone",
+          "number": "02",
+          "title": "Offline-first products",
+          "copy": "Building mobile experiences for low-connectivity environments where every saved record and retry path matters."
+        },
+        {
+          "icon": "Users2",
+          "number": "03",
+          "title": "Technical leadership",
+          "copy": "Creating clarity across engineering, QA, deployment, and stakeholder teams to move complex programs forward."
+        }
+      ]
+    }
+  },
+  {
+    "slug": "homeSection6",
+    "label": "Home · Career timeline",
+    "fields": [
+      {
+        "name": "field1",
+        "type": "textarea",
+        "label": "05"
+      },
+      {
+        "name": "field2",
+        "type": "textarea",
+        "label": "Career ladder"
+      },
+      {
+        "name": "field3",
+        "type": "textarea",
+        "label": "March 2022 — Present"
+      },
+      {
+        "name": "field4",
+        "type": "text",
+        "label": "text: Four roles. One continuous rise in ownership."
+      },
+      {
+        "name": "field5",
+        "type": "textarea",
+        "label": "From building HTML5 learning experiences to leading architecture, delivery, and engineering teams—while remaining close to the implementation."
+      },
+      {
+        "name": "field6",
+        "type": "textarea",
+        "label": "0"
+      }
+    ],
+    "defaults": {
+      "field1": "05",
+      "field2": "Career ladder",
+      "field3": "March 2022 — Present",
+      "field4": "Four roles. One continuous rise in ownership.",
+      "field5": "From building HTML5 learning experiences to leading architecture, delivery, and engineering teams—while remaining close to the implementation.",
+      "field6": "0"
+    }
+  },
+  {
+    "slug": "homeSection7",
+    "label": "Home · Testimonials",
+    "fields": [
+      {
+        "name": "field1",
+        "type": "textarea",
+        "label": "06"
+      },
+      {
+        "name": "field2",
+        "type": "textarea",
+        "label": "What people say"
+      },
+      {
+        "name": "field3",
+        "type": "textarea",
+        "label": "Leadership, seen from the team"
+      },
+      {
+        "name": "field4",
+        "type": "text",
+        "label": "text: People I've worked with, in their own words."
+      },
+      {
+        "name": "field5",
+        "type": "textarea",
+        "label": "03 voices"
+      },
+      {
+        "name": "field6",
+        "type": "textarea",
+        "label": "The clearest measure of leadership is the confidence, ownership, and growth it creates in others."
+      },
+      {
+        "name": "field7",
+        "type": "textarea",
+        "label": "0"
+      }
+    ],
+    "defaults": {
+      "field1": "06",
+      "field2": "What people say",
+      "field3": "Leadership, seen from the team",
+      "field4": "People I've worked with, in their own words.",
+      "field5": "03 voices",
+      "field6": "The clearest measure of leadership is the confidence, ownership, and growth it creates in others.",
+      "field7": "0"
+    }
+  },
+  {
+    "slug": "homeSection8",
+    "label": "Home · Contact",
+    "fields": [
+      {
+        "name": "field1",
+        "type": "textarea",
+        "label": "Have a hard problem worth solving?"
+      },
+      {
+        "name": "field2",
+        "type": "text",
+        "label": "text: Bring me the problem that needs more than a quick fix."
+      },
+      {
+        "name": "field4",
+        "type": "textarea",
+        "label": "Start a conversation"
+      },
+      {
+        "name": "field5",
+        "type": "textarea",
+        "label": "RAKESH BISWAL — ENGINEERING LEADER"
+      }
+    ],
+    "defaults": {
+      "field1": "Have a hard problem worth solving?",
+      "field2": "Bring me the problem that needs more than a quick fix.",
+      "field3": "mailto:hsekar.bat@gmail.com",
+      "field4": "Start a conversation",
+      "field5": "RAKESH BISWAL — ENGINEERING LEADER",
+      "field6": "https://github.com/Rakesh-ops-sketch",
+      "field7": "GITHUB",
+      "field8": "https://www.linkedin.com/in/lucifermsloh/",
+      "field9": "LINKEDIN"
+    }
+  },
+  {
+    "slug": "aboutSection1",
+    "label": "About · Hero",
+    "fields": [
+      {
+        "name": "field1",
+        "type": "textarea",
+        "label": "01"
+      },
+      {
+        "name": "field2",
+        "type": "textarea",
+        "label": "About"
+      },
+      {
+        "name": "field3",
+        "type": "text",
+        "label": "text: Builder, leader, and systems thinker."
+      },
+      {
+        "name": "field4",
+        "type": "textarea",
+        "label": "I work across product, engineering, and operations to turn complicated field problems into dependable software."
+      },
+      {
+        "name": "field6",
+        "type": "upload",
+        "label": "src: /about-illustration-light.png",
+        "relationTo": "media"
+      },
+      {
+        "name": "field7",
+        "type": "text",
+        "label": "alt: "
+      },
+      {
+        "name": "field8",
+        "type": "upload",
+        "label": "src: /about-illustration-dark.png",
+        "relationTo": "media"
+      },
+      {
+        "name": "field9",
+        "type": "text",
+        "label": "alt: "
+      }
+    ],
+    "defaults": {
+      "field1": "01",
+      "field2": "About",
+      "field3": "Builder, leader, and systems thinker.",
+      "field4": "I work across product, engineering, and operations to turn complicated field problems into dependable software.",
+      "field5": "Bengaluru, India",
+      "field6": "/about-illustration-light.png",
+      "field7": "",
+      "field8": "/about-illustration-dark.png",
+      "field9": ""
+    }
+  },
+  {
+    "slug": "aboutSection2",
+    "label": "About · Story",
+    "fields": [
+      {
+        "name": "field1",
+        "type": "text",
+        "label": "text: I care about the moment software leaves the demo enviro"
+      },
+      {
+        "name": "field2",
+        "type": "textarea",
+        "label": "My path started with browser games and interactive experiences. That work taught me to think in systems: inputs, state, performance, and feedback."
+      },
+      {
+        "name": "field3",
+        "type": "textarea",
+        "label": "Today I lead teams building mobile and backend platforms used for large-scale education programs. I remain close to the code while shaping architecture, delivery, and the conditions teams need to do excellent work."
+      },
+      {
+        "name": "field5",
+        "type": "textarea",
+        "label": "Start a conversation"
+      }
+    ],
+    "defaults": {
+      "field1": "I care about the moment software leaves the demo environment and meets the real world.",
+      "field2": "My path started with browser games and interactive experiences. That work taught me to think in systems: inputs, state, performance, and feedback.",
+      "field3": "Today I lead teams building mobile and backend platforms used for large-scale education programs. I remain close to the code while shaping architecture, delivery, and the conditions teams need to do excellent work.",
+      "field4": "mailto:hsekar.bat@gmail.com",
+      "field5": "Start a conversation"
+    }
+  },
+  {
+    "slug": "aboutSection3",
+    "label": "About · Career roadmap",
+    "fields": [
+      {
+        "name": "field1",
+        "type": "textarea",
+        "label": "02"
+      },
+      {
+        "name": "field2",
+        "type": "textarea",
+        "label": "Career roadmap"
+      },
+      {
+        "name": "field3",
+        "type": "text",
+        "label": "text: Four roles. A continuous expansion of ownership."
+      },
+      {
+        "name": "field4",
+        "type": "textarea",
+        "label": "Each chapter added a new layer—from crafting interactions, to owning systems, to leading delivery, architecture, and people."
+      },
+      {
+        "name": "field5",
+        "type": "textarea",
+        "label": "CRAFT"
+      },
+      {
+        "name": "field6",
+        "type": "textarea",
+        "label": "SYSTEMS"
+      },
+      {
+        "name": "field7",
+        "type": "textarea",
+        "label": "TEAMS"
+      },
+      {
+        "name": "field8",
+        "type": "textarea",
+        "label": "STRATEGY"
+      },
+      {
+        "name": "field9",
+        "type": "textarea",
+        "label": "0"
+      },
+      {
+        "name": "field10",
+        "type": "textarea",
+        "label": "What changed"
+      },
+      {
+        "name": "field11",
+        "type": "textarea",
+        "label": "PARALLEL CHAPTER · MARCH 2026 — PRESENT"
+      },
+      {
+        "name": "field12",
+        "type": "textarea",
+        "label": "CTO, E‑Talk"
+      },
+      {
+        "name": "field13",
+        "type": "textarea",
+        "label": "Applying the full arc—product strategy, architecture, hands-on development, AI content infrastructure, delivery, and commercial thinking—to build an Odisha-first English-learning venture from the ground up."
+      },
+      {
+        "name": "field14",
+        "type": "text",
+        "label": "href: https://www.e-talk.in/en"
+      },
+      {
+        "name": "field15",
+        "type": "textarea",
+        "label": "Visit E‑Talk"
+      }
+    ],
+    "defaults": {
+      "field1": "02",
+      "field2": "Career roadmap",
+      "field3": "Four roles. A continuous expansion of ownership.",
+      "field4": "Each chapter added a new layer—from crafting interactions, to owning systems, to leading delivery, architecture, and people.",
+      "field5": "CRAFT",
+      "field6": "SYSTEMS",
+      "field7": "TEAMS",
+      "field8": "STRATEGY",
+      "field9": "0",
+      "field10": "What changed",
+      "field11": "PARALLEL CHAPTER · MARCH 2026 — PRESENT",
+      "field12": "CTO, E‑Talk",
+      "field13": "Applying the full arc—product strategy, architecture, hands-on development, AI content infrastructure, delivery, and commercial thinking—to build an Odisha-first English-learning venture from the ground up.",
+      "field14": "https://www.e-talk.in/en",
+      "field15": "Visit E‑Talk"
+    }
+  },
+  {
+    "slug": "aboutSection4",
+    "label": "About · Principles",
+    "fields": [
+      {
+        "name": "field1",
+        "type": "textarea",
+        "label": "03"
+      },
+      {
+        "name": "field2",
+        "type": "textarea",
+        "label": "Principles"
+      },
+      {
+        "name": "field3",
+        "type": "array",
+        "label": "values",
+        "fields": [
+          {
+            "name": "column1",
+            "type": "textarea",
+            "label": "Number"
+          },
+          {
+            "name": "column2",
+            "type": "textarea",
+            "label": "Title"
+          },
+          {
+            "name": "column3",
+            "type": "textarea",
+            "label": "Description"
+          }
+        ]
+      }
+    ],
+    "defaults": {
+      "field1": "03",
+      "field2": "Principles",
+      "field3": [
+        {
+          "column1": "01",
+          "column2": "Field reality first",
+          "column3": "The best architecture starts with the people, devices, and constraints it must serve."
+        },
+        {
+          "column1": "02",
+          "column2": "Clarity compounds",
+          "column3": "Clear decisions, ownership, and feedback loops help teams move quickly without creating chaos."
+        },
+        {
+          "column1": "03",
+          "column2": "Reliability is a feature",
+          "column3": "Offline behavior, recovery paths, and observability deserve the same care as the visible interface."
+        }
+      ]
+    }
+  },
+  {
+    "slug": "workSection1",
+    "label": "Work · Hero",
+    "fields": [
+      {
+        "name": "field1",
+        "type": "textarea",
+        "label": "02"
+      },
+      {
+        "name": "field2",
+        "type": "textarea",
+        "label": "Selected work"
+      },
+      {
+        "name": "field3",
+        "type": "text",
+        "label": "text: Products, platforms, and teams built to move together."
+      },
+      {
+        "name": "field4",
+        "type": "textarea",
+        "label": "From offline assessment systems and real-time scoring infrastructure to an AI learning venture—my work connects product thinking, engineering depth, and dependable execution."
+      },
+      {
+        "name": "field5",
+        "type": "textarea",
+        "label": "2022—NOW"
+      },
+      {
+        "name": "field6",
+        "type": "textarea",
+        "label": "PRODUCT · PLATFORM · PEOPLE"
+      }
+    ],
+    "defaults": {
+      "field1": "02",
+      "field2": "Selected work",
+      "field3": "Products, platforms, and teams built to move together.",
+      "field4": "From offline assessment systems and real-time scoring infrastructure to an AI learning venture—my work connects product thinking, engineering depth, and dependable execution.",
+      "field5": "2022—NOW",
+      "field6": "PRODUCT · PLATFORM · PEOPLE"
+    }
+  },
+  {
+    "slug": "workSection2",
+    "label": "Work · Flagship systems",
+    "fields": [
+      {
+        "name": "field1",
+        "type": "textarea",
+        "label": "01"
+      },
+      {
+        "name": "field2",
+        "type": "textarea",
+        "label": "Flagship systems"
+      },
+      {
+        "name": "projects",
+        "type": "relationship",
+        "relationTo": "projects",
+        "hasMany": true,
+        "label": "Featured projects (drag to reorder)"
+      }
+    ],
+    "defaults": {
+      "field1": "01",
+      "field2": "Flagship systems",
+      "projects": [
+        "neev",
+        "evaluation",
+        "etalk"
+      ]
+    }
+  },
+  {
+    "slug": "workSection3",
+    "label": "Work · Interactive craft",
+    "fields": [
+      {
+        "name": "field1",
+        "type": "textarea",
+        "label": "02"
+      },
+      {
+        "name": "field2",
+        "type": "textarea",
+        "label": "Interactive craft"
+      },
+      {
+        "name": "field3",
+        "type": "text",
+        "label": "text: Learning experiences made to be played, not just consum"
+      },
+      {
+        "name": "field4",
+        "type": "textarea",
+        "label": "Before leading larger platforms, I built the interaction layer directly—turning educational goals into responsive, understandable, and rewarding experiences."
+      },
+      {
+        "name": "field5",
+        "type": "textarea",
+        "label": "Browser-based learning"
+      },
+      {
+        "name": "field6",
+        "type": "textarea",
+        "label": "HTML5 interactive educational games"
+      },
+      {
+        "name": "field7",
+        "type": "textarea",
+        "label": "Built curriculum-aligned interactions that translate learning objectives into clear mechanics, immediate feedback, and experiences that work reliably across classroom devices."
+      },
+      {
+        "name": "field8",
+        "type": "textarea",
+        "label": "Interaction and state logic"
+      },
+      {
+        "name": "field9",
+        "type": "textarea",
+        "label": "Responsive browser delivery"
+      },
+      {
+        "name": "field10",
+        "type": "textarea",
+        "label": "Accessible learner feedback"
+      },
+      {
+        "name": "field11",
+        "type": "textarea",
+        "label": "Education-first game mechanics"
+      },
+      {
+        "name": "field12",
+        "type": "textarea",
+        "label": "Game development"
+      },
+      {
+        "name": "field13",
+        "type": "textarea",
+        "label": "Unity 2D learning games"
+      },
+      {
+        "name": "field14",
+        "type": "textarea",
+        "label": "Created 2D game experiences where visual systems, progression, input, and feedback support learning without allowing the game layer to overwhelm the objective."
+      },
+      {
+        "name": "field15",
+        "type": "textarea",
+        "label": "Gameplay loops and progression"
+      },
+      {
+        "name": "field16",
+        "type": "textarea",
+        "label": "2D scenes and interaction systems"
+      },
+      {
+        "name": "field17",
+        "type": "textarea",
+        "label": "Performance-conscious implementation"
+      },
+      {
+        "name": "field18",
+        "type": "textarea",
+        "label": "Testing and iterative refinement"
+      }
+    ],
+    "defaults": {
+      "field1": "02",
+      "field2": "Interactive craft",
+      "field3": "Learning experiences made to be played, not just consumed.",
+      "field4": "Before leading larger platforms, I built the interaction layer directly—turning educational goals into responsive, understandable, and rewarding experiences.",
+      "field5": "Browser-based learning",
+      "field6": "HTML5 interactive educational games",
+      "field7": "Built curriculum-aligned interactions that translate learning objectives into clear mechanics, immediate feedback, and experiences that work reliably across classroom devices.",
+      "field8": "Interaction and state logic",
+      "field9": "Responsive browser delivery",
+      "field10": "Accessible learner feedback",
+      "field11": "Education-first game mechanics",
+      "field12": "Game development",
+      "field13": "Unity 2D learning games",
+      "field14": "Created 2D game experiences where visual systems, progression, input, and feedback support learning without allowing the game layer to overwhelm the objective.",
+      "field15": "Gameplay loops and progression",
+      "field16": "2D scenes and interaction systems",
+      "field17": "Performance-conscious implementation",
+      "field18": "Testing and iterative refinement"
+    }
+  },
+  {
+    "slug": "workSection4",
+    "label": "Work · Delivery leadership",
+    "fields": [
+      {
+        "name": "field1",
+        "type": "textarea",
+        "label": "03"
+      },
+      {
+        "name": "field2",
+        "type": "textarea",
+        "label": "How I lead delivery"
+      },
+      {
+        "name": "field3",
+        "type": "text",
+        "label": "text: From the first plan to the production handoff."
+      },
+      {
+        "name": "field4",
+        "type": "textarea",
+        "label": "Leadership stays useful when it creates clarity and remains close enough to the work to resolve real constraints."
+      },
+      {
+        "name": "field5",
+        "type": "textarea",
+        "label": "Product & domain"
+      },
+      {
+        "name": "field6",
+        "type": "textarea",
+        "label": "↔"
+      },
+      {
+        "name": "field7",
+        "type": "textarea",
+        "label": "Engineering"
+      },
+      {
+        "name": "field8",
+        "type": "textarea",
+        "label": "↔"
+      },
+      {
+        "name": "field9",
+        "type": "textarea",
+        "label": "QA"
+      },
+      {
+        "name": "field10",
+        "type": "textarea",
+        "label": "↔"
+      },
+      {
+        "name": "field11",
+        "type": "textarea",
+        "label": "Deployment & field teams"
+      },
+      {
+        "name": "field12",
+        "type": "array",
+        "label": "deliverySteps",
+        "fields": [
+          {
+            "name": "number",
+            "type": "textarea"
+          },
+          {
+            "name": "icon",
+            "type": "select",
+            "options": [
+              "Users2",
+              "Code2",
+              "Presentation",
+              "Rocket"
+            ]
+          },
+          {
+            "name": "title",
+            "type": "textarea"
+          },
+          {
+            "name": "copy",
+            "type": "textarea"
+          },
+          {
+            "name": "tags",
+            "type": "array",
+            "fields": [
+              {
+                "name": "value",
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "defaults": {
+      "field1": "03",
+      "field2": "How I lead delivery",
+      "field3": "From the first plan to the production handoff.",
+      "field4": "Leadership stays useful when it creates clarity and remains close enough to the work to resolve real constraints.",
+      "field5": "Product & domain",
+      "field6": "↔",
+      "field7": "Engineering",
+      "field8": "↔",
+      "field9": "QA",
+      "field10": "↔",
+      "field11": "Deployment & field teams",
+      "field12": [
+        {
+          "number": "01",
+          "icon": "Users2",
+          "title": "Align the room",
+          "copy": "Turn product goals, field constraints, and stakeholder expectations into a shared scope, milestones, ownership, and risks.",
+          "tags": [
+            {
+              "value": "Roadmaps"
+            },
+            {
+              "value": "Estimation"
+            },
+            {
+              "value": "Stakeholder alignment"
+            }
+          ]
+        },
+        {
+          "number": "02",
+          "icon": "Code2",
+          "title": "Stay hands-on",
+          "copy": "Shape the architecture, review critical paths, unblock engineers, and code where technical depth has the highest leverage.",
+          "tags": [
+            {
+              "value": "Architecture"
+            },
+            {
+              "value": "Code reviews"
+            },
+            {
+              "value": "Implementation"
+            }
+          ]
+        },
+        {
+          "number": "03",
+          "icon": "Presentation",
+          "title": "Make complexity visible",
+          "copy": "Use technical presentations, design walkthroughs, and operating dashboards to give teams a clear model of the system.",
+          "tags": [
+            {
+              "value": "Technical presentations"
+            },
+            {
+              "value": "Design reviews"
+            },
+            {
+              "value": "Demos"
+            }
+          ]
+        },
+        {
+          "number": "04",
+          "icon": "Rocket",
+          "title": "Carry it through release",
+          "copy": "Work alongside QA, deployment, product, and field teams through validation, rollout, monitoring, and production response.",
+          "tags": [
+            {
+              "value": "QA partnership"
+            },
+            {
+              "value": "Deployment"
+            },
+            {
+              "value": "Release operations"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "workSection5",
+    "label": "Work · Contact strip",
+    "fields": [
+      {
+        "name": "field1",
+        "type": "text",
+        "label": "text: Want the deeper technical story?"
+      },
+      {
+        "name": "field3",
+        "type": "textarea",
+        "label": "Let's discuss the work"
+      }
+    ],
+    "defaults": {
+      "field1": "Want the deeper technical story?",
+      "field2": "mailto:hsekar.bat@gmail.com",
+      "field3": "Let's discuss the work"
+    }
+  },
+  {
+    "slug": "contactSection1",
+    "label": "Contact · Contact",
+    "fields": [
+      {
+        "name": "field1",
+        "type": "textarea",
+        "label": "04"
+      },
+      {
+        "name": "field2",
+        "type": "textarea",
+        "label": "Contact"
+      },
+      {
+        "name": "field3",
+        "type": "text",
+        "label": "text: Good work starts with an honest conversation."
+      },
+      {
+        "name": "field4",
+        "type": "textarea",
+        "label": "If you're building a serious product, untangling a difficult system, or assembling a team around meaningful work, I'd like to hear about it."
+      },
+      {
+        "name": "field5",
+        "type": "textarea",
+        "label": "Email me"
+      },
+      {
+        "name": "field6",
+        "type": "textarea",
+        "label": "ELSEWHERE"
+      }
+    ],
+    "defaults": {
+      "field1": "04",
+      "field2": "Contact",
+      "field3": "Good work starts with an honest conversation.",
+      "field4": "If you're building a serious product, untangling a difficult system, or assembling a team around meaningful work, I'd like to hear about it.",
+      "field5": "Email me",
+      "field6": "ELSEWHERE",
+      "field7": "https://github.com/Rakesh-ops-sketch",
+      "field8": "GitHub ↗",
+      "field9": "https://www.linkedin.com/in/lucifermsloh/",
+      "field10": "LinkedIn ↗"
+    }
+  },
+  {
+    "slug": "playgroundSection1",
+    "label": "Playground · Hero",
+    "fields": [
+      {
+        "name": "field1",
+        "type": "textarea",
+        "label": "03"
+      },
+      {
+        "name": "field2",
+        "type": "textarea",
+        "label": "Interactive playground"
+      },
+      {
+        "name": "field3",
+        "type": "text",
+        "label": "text: Small experiments. Serious curiosity."
+      },
+      {
+        "name": "field4",
+        "type": "textarea",
+        "label": "Playable ideas and visual explanations built to make algorithms, state, and browser behavior tangible."
+      },
+      {
+        "name": "field5",
+        "type": "textarea",
+        "label": "13 EXPERIMENTS / ALWAYS EVOLVING"
+      }
+    ],
+    "defaults": {
+      "field1": "03",
+      "field2": "Interactive playground",
+      "field3": "Small experiments. Serious curiosity.",
+      "field4": "Playable ideas and visual explanations built to make algorithms, state, and browser behavior tangible.",
+      "field5": "13 EXPERIMENTS / ALWAYS EVOLVING"
+    }
+  },
+  {
+    "slug": "playgroundSection2",
+    "label": "Playground · Games",
+    "fields": [
+      {
+        "name": "field1",
+        "type": "textarea",
+        "label": "01"
+      },
+      {
+        "name": "field2",
+        "type": "textarea",
+        "label": "Games"
+      },
+      {
+        "name": "field3",
+        "type": "text",
+        "label": "text: Logic you can play."
+      }
+    ],
+    "defaults": {
+      "field1": "01",
+      "field2": "Games",
+      "field3": "Logic you can play."
+    }
+  },
+  {
+    "slug": "playgroundSection3",
+    "label": "Playground · Visual systems",
+    "fields": [
+      {
+        "name": "field1",
+        "type": "textarea",
+        "label": "02"
+      },
+      {
+        "name": "field2",
+        "type": "textarea",
+        "label": "Visual systems"
+      },
+      {
+        "name": "field3",
+        "type": "text",
+        "label": "text: Concepts you can see."
+      }
+    ],
+    "defaults": {
+      "field1": "02",
+      "field2": "Visual systems",
+      "field3": "Concepts you can see."
+    }
+  },
+  {
+    "slug": "neevWork",
+    "label": "Ei Neev Assessments · Work card",
+    "fields": [
+      {
+        "name": "field3",
+        "type": "textarea",
+        "label": "National FLN platform"
+      },
+      {
+        "name": "field4",
+        "type": "textarea",
+        "label": "01 / 03"
+      },
+      {
+        "name": "field5",
+        "type": "textarea",
+        "label": "Engineering Lead · Architecture & delivery"
+      },
+      {
+        "name": "field7",
+        "type": "textarea",
+        "label": "An offline-first assessment platform built for government-backed education programs where weak connectivity, large rollouts, and field reliability are everyday constraints."
+      },
+      {
+        "name": "field8",
+        "type": "textarea",
+        "label": "React Native"
+      },
+      {
+        "name": "field9",
+        "type": "textarea",
+        "label": "Realm"
+      },
+      {
+        "name": "field10",
+        "type": "textarea",
+        "label": "Go / Gin"
+      },
+      {
+        "name": "field11",
+        "type": "textarea",
+        "label": "S3"
+      },
+      {
+        "name": "field12",
+        "type": "textarea",
+        "label": "MongoDB"
+      },
+      {
+        "name": "field13",
+        "type": "textarea",
+        "label": "Reliability shift"
+      },
+      {
+        "name": "field14",
+        "type": "textarea",
+        "label": "50–60%"
+      },
+      {
+        "name": "field15",
+        "type": "textarea",
+        "label": "→"
+      },
+      {
+        "name": "field16",
+        "type": "textarea",
+        "label": "0"
+      },
+      {
+        "name": "field17",
+        "type": "textarea",
+        "label": "Observed development-stage data loss reduced to zero in production validation."
+      },
+      {
+        "name": "field18",
+        "type": "textarea",
+        "label": "57K"
+      },
+      {
+        "name": "field19",
+        "type": "textarea",
+        "label": "Assessments delivered"
+      },
+      {
+        "name": "field20",
+        "type": "textarea",
+        "label": "27.5K"
+      },
+      {
+        "name": "field21",
+        "type": "textarea",
+        "label": "Students supported"
+      },
+      {
+        "name": "field22",
+        "type": "textarea",
+        "label": "4K"
+      },
+      {
+        "name": "field23",
+        "type": "textarea",
+        "label": "Schools reached"
+      },
+      {
+        "name": "field24",
+        "type": "textarea",
+        "label": "11"
+      },
+      {
+        "name": "field25",
+        "type": "textarea",
+        "label": "Languages supported"
+      },
+      {
+        "name": "field26",
+        "type": "textarea",
+        "label": "Resilient client sync, retry paths, autosave, and crash recovery"
+      },
+      {
+        "name": "field27",
+        "type": "textarea",
+        "label": "React Native New Architecture, TurboModules, and C++ integrations"
+      },
+      {
+        "name": "field28",
+        "type": "textarea",
+        "label": "QA-to-production pipelines across Bitbucket, Jenkins, and AWS"
+      }
+    ],
+    "defaults": {
+      "field3": "National FLN platform",
+      "field4": "01 / 03",
+      "field5": "Engineering Lead · Architecture & delivery",
+      "field6": "Ei Neev Assessments",
+      "field7": "An offline-first assessment platform built for government-backed education programs where weak connectivity, large rollouts, and field reliability are everyday constraints.",
+      "field8": "React Native",
+      "field9": "Realm",
+      "field10": "Go / Gin",
+      "field11": "S3",
+      "field12": "MongoDB",
+      "field13": "Reliability shift",
+      "field14": "50–60%",
+      "field15": "→",
+      "field16": "0",
+      "field17": "Observed development-stage data loss reduced to zero in production validation.",
+      "field18": "57K",
+      "field19": "Assessments delivered",
+      "field20": "27.5K",
+      "field21": "Students supported",
+      "field22": "4K",
+      "field23": "Schools reached",
+      "field24": "11",
+      "field25": "Languages supported",
+      "field26": "Resilient client sync, retry paths, autosave, and crash recovery",
+      "field27": "React Native New Architecture, TurboModules, and C++ integrations",
+      "field28": "QA-to-production pipelines across Bitbucket, Jenkins, and AWS"
+    }
+  },
+  {
+    "slug": "evaluationWork",
+    "label": "Evaluator & Scoring Portal · Work card",
+    "fields": [
+      {
+        "name": "field29",
+        "type": "textarea",
+        "label": "Real-time scoring infrastructure"
+      },
+      {
+        "name": "field30",
+        "type": "textarea",
+        "label": "02 / 03"
+      },
+      {
+        "name": "field31",
+        "type": "textarea",
+        "label": "Platform architecture · Live operations"
+      },
+      {
+        "name": "field33",
+        "type": "textarea",
+        "label": "A browser-first evaluator workspace where thousands of scoring events must remain fast, recoverable, and traceable through bursts and reconnects."
+      },
+      {
+        "name": "field34",
+        "type": "textarea",
+        "label": "WebSockets"
+      },
+      {
+        "name": "field35",
+        "type": "textarea",
+        "label": "Persistent queues"
+      },
+      {
+        "name": "field36",
+        "type": "textarea",
+        "label": "Audit trails"
+      },
+      {
+        "name": "field37",
+        "type": "textarea",
+        "label": "AI-assisted scoring"
+      },
+      {
+        "name": "field38",
+        "type": "textarea",
+        "label": "Operating scale"
+      },
+      {
+        "name": "field39",
+        "type": "textarea",
+        "label": "1K–2K"
+      },
+      {
+        "name": "field40",
+        "type": "textarea",
+        "label": "Evaluators scoring concurrently without interrupting active operations."
+      },
+      {
+        "name": "field41",
+        "type": "textarea",
+        "label": "51,773"
+      },
+      {
+        "name": "field42",
+        "type": "textarea",
+        "label": "Assessments scored"
+      },
+      {
+        "name": "field43",
+        "type": "textarea",
+        "label": "515,289"
+      },
+      {
+        "name": "field44",
+        "type": "textarea",
+        "label": "Subtests completed"
+      },
+      {
+        "name": "field45",
+        "type": "textarea",
+        "label": "20,455"
+      },
+      {
+        "name": "field46",
+        "type": "textarea",
+        "label": "Students represented"
+      },
+      {
+        "name": "field47",
+        "type": "textarea",
+        "label": "Persistent browser queues with controlled inactivity-based flushing"
+      },
+      {
+        "name": "field48",
+        "type": "textarea",
+        "label": "Versioned scores, scrutiny controls, and evaluator audit history"
+      },
+      {
+        "name": "field49",
+        "type": "textarea",
+        "label": "Sarvam, Gemini Flash, and in-house model integrations"
+      }
+    ],
+    "defaults": {
+      "field29": "Real-time scoring infrastructure",
+      "field30": "02 / 03",
+      "field31": "Platform architecture · Live operations",
+      "field32": "Evaluator & Scoring Portal",
+      "field33": "A browser-first evaluator workspace where thousands of scoring events must remain fast, recoverable, and traceable through bursts and reconnects.",
+      "field34": "WebSockets",
+      "field35": "Persistent queues",
+      "field36": "Audit trails",
+      "field37": "AI-assisted scoring",
+      "field38": "Operating scale",
+      "field39": "1K–2K",
+      "field40": "Evaluators scoring concurrently without interrupting active operations.",
+      "field41": "51,773",
+      "field42": "Assessments scored",
+      "field43": "515,289",
+      "field44": "Subtests completed",
+      "field45": "20,455",
+      "field46": "Students represented",
+      "field47": "Persistent browser queues with controlled inactivity-based flushing",
+      "field48": "Versioned scores, scrutiny controls, and evaluator audit history",
+      "field49": "Sarvam, Gemini Flash, and in-house model integrations"
+    }
+  },
+  {
+    "slug": "etalkWork",
+    "label": "E‑Talk · Work card",
+    "fields": [
+      {
+        "name": "field50",
+        "type": "textarea",
+        "label": "AI English-learning venture"
+      },
+      {
+        "name": "field51",
+        "type": "textarea",
+        "label": "03 / 03"
+      },
+      {
+        "name": "field52",
+        "type": "textarea",
+        "label": "CTO · Product & engineering"
+      },
+      {
+        "name": "field54",
+        "type": "textarea",
+        "label": "An Odisha-first English-learning product spanning a Next.js launch experience, Flutter learner app, Node/TypeScript services, MongoDB, and a custom content operations platform."
+      },
+      {
+        "name": "field55",
+        "type": "textarea",
+        "label": "Flutter"
+      },
+      {
+        "name": "field56",
+        "type": "textarea",
+        "label": "Next.js"
+      },
+      {
+        "name": "field57",
+        "type": "textarea",
+        "label": "Node / Express"
+      },
+      {
+        "name": "field58",
+        "type": "textarea",
+        "label": "MongoDB"
+      },
+      {
+        "name": "field59",
+        "type": "textarea",
+        "label": "Google Cloud"
+      },
+      {
+        "name": "field60",
+        "type": "text",
+        "label": "href: https://www.e-talk.in/en"
+      },
+      {
+        "name": "field61",
+        "type": "textarea",
+        "label": "Visit E‑Talk"
+      },
+      {
+        "name": "field62",
+        "type": "upload",
+        "label": "src: /work/etalk-cms-redacted.png",
+        "relationTo": "media"
+      },
+      {
+        "name": "field63",
+        "type": "text",
+        "label": "alt: Redacted E-Talk content generation CMS showing batch pr"
+      },
+      {
+        "name": "field64",
+        "type": "textarea",
+        "label": "Proprietary lesson content anonymized"
+      },
+      {
+        "name": "field65",
+        "type": "textarea",
+        "label": "138"
+      },
+      {
+        "name": "field66",
+        "type": "textarea",
+        "label": "Canonical topics"
+      },
+      {
+        "name": "field67",
+        "type": "textarea",
+        "label": "12"
+      },
+      {
+        "name": "field68",
+        "type": "textarea",
+        "label": "Learner goals"
+      },
+      {
+        "name": "field69",
+        "type": "textarea",
+        "label": "60–70"
+      },
+      {
+        "name": "field70",
+        "type": "textarea",
+        "label": "Topics per roadmap"
+      },
+      {
+        "name": "field71",
+        "type": "textarea",
+        "label": "A1–B2"
+      },
+      {
+        "name": "field72",
+        "type": "textarea",
+        "label": "CEFR progression"
+      },
+      {
+        "name": "field73",
+        "type": "textarea",
+        "label": "Batch AI generation designed to control cost at catalogue scale"
+      },
+      {
+        "name": "field74",
+        "type": "textarea",
+        "label": "Asset-level retries preserve successful output when one item fails"
+      },
+      {
+        "name": "field75",
+        "type": "textarea",
+        "label": "CMS workflows for planning, generation, review, approval, and repair"
+      }
+    ],
+    "defaults": {
+      "field50": "AI English-learning venture",
+      "field51": "03 / 03",
+      "field52": "CTO · Product & engineering",
+      "field53": "E‑Talk",
+      "field54": "An Odisha-first English-learning product spanning a Next.js launch experience, Flutter learner app, Node/TypeScript services, MongoDB, and a custom content operations platform.",
+      "field55": "Flutter",
+      "field56": "Next.js",
+      "field57": "Node / Express",
+      "field58": "MongoDB",
+      "field59": "Google Cloud",
+      "field60": "https://www.e-talk.in/en",
+      "field61": "Visit E‑Talk",
+      "field62": "/work/etalk-cms-redacted.png",
+      "field63": "Redacted E-Talk content generation CMS showing batch progress and recovery states.",
+      "field64": "Proprietary lesson content anonymized",
+      "field65": "138",
+      "field66": "Canonical topics",
+      "field67": "12",
+      "field68": "Learner goals",
+      "field69": "60–70",
+      "field70": "Topics per roadmap",
+      "field71": "A1–B2",
+      "field72": "CEFR progression",
+      "field73": "Batch AI generation designed to control cost at catalogue scale",
+      "field74": "Asset-level retries preserve successful output when one item fails",
+      "field75": "CMS workflows for planning, generation, review, approval, and repair"
+    }
+  }
+]

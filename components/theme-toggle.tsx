@@ -128,7 +128,7 @@ export function ThemeToggle() {
       // If no stored preference, follow system
       const dark = stored === "dark" || stored === "light"
         ? stored === "dark"
-        : prefersDark;
+        : document.documentElement.dataset.defaultTheme === "dark" || (document.documentElement.dataset.defaultTheme !== "light" && prefersDark);
       setIsDark(dark);
       document.documentElement.classList.toggle("dark", dark);
     };
@@ -141,7 +141,7 @@ export function ThemeToggle() {
     const handleSystemThemeChange = (e: MediaQueryListEvent) => {
       const stored = localStorage.getItem("theme");
       // Only auto-switch if user hasn't manually set a preference
-      if (!stored) {
+      if (!stored && document.documentElement.dataset.defaultTheme === "system") {
         setIsDark(e.matches);
         document.documentElement.classList.toggle("dark", e.matches);
       }

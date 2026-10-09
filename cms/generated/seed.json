@@ -1,0 +1,866 @@
+{
+  "pages": [
+    {
+      "title": "Home",
+      "slug": "home",
+      "shell": "portfolio-shell",
+      "seo": {
+        "title": "Rakesh Biswal — Engineering Leader",
+        "description": "Engineering leader building reliable, offline-first platforms for high-impact education initiatives across India."
+      },
+      "sections": [
+        {
+          "blockType": "homeSection1",
+          "field1": "Available for meaningful work",
+          "field2": "Bengaluru, India",
+          "field3": "Engineering leader · Product builder",
+          "field4": "I'm Rakesh Biswal. I lead teams building dependable mobile and backend platforms for education programs operating at national scale.",
+          "field5": "SCROLL TO DISCOVER",
+          "field6": "©",
+          "field7": "/ RB",
+          "field8": "Software for demanding\nenvironments, built to endure.",
+          "field9": "Explore my work",
+          "field10": "/work",
+          "field11": "Let's talk",
+          "field12": "mailto:hsekar.bat@gmail.com"
+        },
+        {
+          "blockType": "projectPresentation",
+          "project": "neev",
+          "variant": "home",
+          "tone": "light"
+        },
+        {
+          "blockType": "projectPresentation",
+          "project": "evaluation",
+          "variant": "home",
+          "tone": "light"
+        },
+        {
+          "blockType": "projectPresentation",
+          "project": "etalk",
+          "variant": "home",
+          "tone": "light"
+        },
+        {
+          "blockType": "homeSection5",
+          "field1": "04",
+          "field2": "What I bring",
+          "field3": "Direction for the team. Depth in the implementation.",
+          "field4": "I work across the product stack—from the interface people touch to the architecture, delivery systems, and engineering practices that keep it dependable.",
+          "field5": "/playground",
+          "field6": "Interactive lab",
+          "field7": "See how I think in motion.",
+          "field8": "Algorithms, games, and small experiments—built to be explored.",
+          "field9": [
+            {
+              "icon": "Layers3",
+              "number": "01",
+              "title": "Systems architecture",
+              "copy": "Designing resilient platforms from product requirements through data models, APIs, sync protocols, and observability."
+            },
+            {
+              "icon": "Smartphone",
+              "number": "02",
+              "title": "Offline-first products",
+              "copy": "Building mobile experiences for low-connectivity environments where every saved record and retry path matters."
+            },
+            {
+              "icon": "Users2",
+              "number": "03",
+              "title": "Technical leadership",
+              "copy": "Creating clarity across engineering, QA, deployment, and stakeholder teams to move complex programs forward."
+            }
+          ]
+        },
+        {
+          "blockType": "homeSection6",
+          "field1": "05",
+          "field2": "Career ladder",
+          "field3": "March 2022 — Present",
+          "field4": "Four roles. One continuous rise in ownership.",
+          "field5": "From building HTML5 learning experiences to leading architecture, delivery, and engineering teams—while remaining close to the implementation.",
+          "field6": "0"
+        },
+        {
+          "blockType": "homeSection7",
+          "field1": "06",
+          "field2": "What people say",
+          "field3": "Leadership, seen from the team",
+          "field4": "People I've worked with, in their own words.",
+          "field5": "03 voices",
+          "field6": "The clearest measure of leadership is the confidence, ownership, and growth it creates in others.",
+          "field7": "0"
+        },
+        {
+          "blockType": "homeSection8",
+          "field1": "Have a hard problem worth solving?",
+          "field2": "Bring me the problem that needs more than a quick fix.",
+          "field3": "mailto:hsekar.bat@gmail.com",
+          "field4": "Start a conversation",
+          "field5": "RAKESH BISWAL — ENGINEERING LEADER",
+          "field6": "https://github.com/Rakesh-ops-sketch",
+          "field7": "GITHUB",
+          "field8": "https://www.linkedin.com/in/lucifermsloh/",
+          "field9": "LINKEDIN"
+        }
+      ],
+      "_status": "published"
+    },
+    {
+      "title": "About",
+      "slug": "about",
+      "shell": "inner-page",
+      "seo": {},
+      "sections": [
+        {
+          "blockType": "aboutSection1",
+          "field1": "01",
+          "field2": "About",
+          "field3": "Builder, leader, and systems thinker.",
+          "field4": "I work across product, engineering, and operations to turn complicated field problems into dependable software.",
+          "field5": "Bengaluru, India",
+          "field6": "/about-illustration-light.png",
+          "field7": "",
+          "field8": "/about-illustration-dark.png",
+          "field9": ""
+        },
+        {
+          "blockType": "aboutSection2",
+          "field1": "I care about the moment software leaves the demo environment and meets the real world.",
+          "field2": "My path started with browser games and interactive experiences. That work taught me to think in systems: inputs, state, performance, and feedback.",
+          "field3": "Today I lead teams building mobile and backend platforms used for large-scale education programs. I remain close to the code while shaping architecture, delivery, and the conditions teams need to do excellent work.",
+          "field4": "mailto:hsekar.bat@gmail.com",
+          "field5": "Start a conversation"
+        },
+        {
+          "blockType": "aboutSection3",
+          "field1": "02",
+          "field2": "Career roadmap",
+          "field3": "Four roles. A continuous expansion of ownership.",
+          "field4": "Each chapter added a new layer—from crafting interactions, to owning systems, to leading delivery, architecture, and people.",
+          "field5": "CRAFT",
+          "field6": "SYSTEMS",
+          "field7": "TEAMS",
+          "field8": "STRATEGY",
+          "field9": "0",
+          "field10": "What changed",
+          "field11": "PARALLEL CHAPTER · MARCH 2026 — PRESENT",
+          "field12": "CTO, E‑Talk",
+          "field13": "Applying the full arc—product strategy, architecture, hands-on development, AI content infrastructure, delivery, and commercial thinking—to build an Odisha-first English-learning venture from the ground up.",
+          "field14": "https://www.e-talk.in/en",
+          "field15": "Visit E‑Talk"
+        },
+        {
+          "blockType": "aboutSection4",
+          "field1": "03",
+          "field2": "Principles",
+          "field3": [
+            {
+              "column1": "01",
+              "column2": "Field reality first",
+              "column3": "The best architecture starts with the people, devices, and constraints it must serve."
+            },
+            {
+              "column1": "02",
+              "column2": "Clarity compounds",
+              "column3": "Clear decisions, ownership, and feedback loops help teams move quickly without creating chaos."
+            },
+            {
+              "column1": "03",
+              "column2": "Reliability is a feature",
+              "column3": "Offline behavior, recovery paths, and observability deserve the same care as the visible interface."
+            }
+          ]
+        }
+      ],
+      "_status": "published"
+    },
+    {
+      "title": "Work",
+      "slug": "work",
+      "shell": "inner-page work-page work-page-detailed",
+      "seo": {
+        "title": "Work — Rakesh Biswal",
+        "description": "Selected platforms, learning products, interactive experiences, and engineering leadership work by Rakesh Biswal."
+      },
+      "sections": [
+        {
+          "blockType": "workSection1",
+          "field1": "02",
+          "field2": "Selected work",
+          "field3": "Products, platforms, and teams built to move together.",
+          "field4": "From offline assessment systems and real-time scoring infrastructure to an AI learning venture—my work connects product thinking, engineering depth, and dependable execution.",
+          "field5": "2022—NOW",
+          "field6": "PRODUCT · PLATFORM · PEOPLE"
+        },
+        {
+          "blockType": "workSection2",
+          "field1": "01",
+          "field2": "Flagship systems",
+          "projects": [
+            "neev",
+            "evaluation",
+            "etalk"
+          ]
+        },
+        {
+          "blockType": "workSection3",
+          "field1": "02",
+          "field2": "Interactive craft",
+          "field3": "Learning experiences made to be played, not just consumed.",
+          "field4": "Before leading larger platforms, I built the interaction layer directly—turning educational goals into responsive, understandable, and rewarding experiences.",
+          "field5": "Browser-based learning",
+          "field6": "HTML5 interactive educational games",
+          "field7": "Built curriculum-aligned interactions that translate learning objectives into clear mechanics, immediate feedback, and experiences that work reliably across classroom devices.",
+          "field8": "Interaction and state logic",
+          "field9": "Responsive browser delivery",
+          "field10": "Accessible learner feedback",
+          "field11": "Education-first game mechanics",
+          "field12": "Game development",
+          "field13": "Unity 2D learning games",
+          "field14": "Created 2D game experiences where visual systems, progression, input, and feedback support learning without allowing the game layer to overwhelm the objective.",
+          "field15": "Gameplay loops and progression",
+          "field16": "2D scenes and interaction systems",
+          "field17": "Performance-conscious implementation",
+          "field18": "Testing and iterative refinement"
+        },
+        {
+          "blockType": "workSection4",
+          "field1": "03",
+          "field2": "How I lead delivery",
+          "field3": "From the first plan to the production handoff.",
+          "field4": "Leadership stays useful when it creates clarity and remains close enough to the work to resolve real constraints.",
+          "field5": "Product & domain",
+          "field6": "↔",
+          "field7": "Engineering",
+          "field8": "↔",
+          "field9": "QA",
+          "field10": "↔",
+          "field11": "Deployment & field teams",
+          "field12": [
+            {
+              "number": "01",
+              "icon": "Users2",
+              "title": "Align the room",
+              "copy": "Turn product goals, field constraints, and stakeholder expectations into a shared scope, milestones, ownership, and risks.",
+              "tags": [
+                {
+                  "value": "Roadmaps"
+                },
+                {
+                  "value": "Estimation"
+                },
+                {
+                  "value": "Stakeholder alignment"
+                }
+              ]
+            },
+            {
+              "number": "02",
+              "icon": "Code2",
+              "title": "Stay hands-on",
+              "copy": "Shape the architecture, review critical paths, unblock engineers, and code where technical depth has the highest leverage.",
+              "tags": [
+                {
+                  "value": "Architecture"
+                },
+                {
+                  "value": "Code reviews"
+                },
+                {
+                  "value": "Implementation"
+                }
+              ]
+            },
+            {
+              "number": "03",
+              "icon": "Presentation",
+              "title": "Make complexity visible",
+              "copy": "Use technical presentations, design walkthroughs, and operating dashboards to give teams a clear model of the system.",
+              "tags": [
+                {
+                  "value": "Technical presentations"
+                },
+                {
+                  "value": "Design reviews"
+                },
+                {
+                  "value": "Demos"
+                }
+              ]
+            },
+            {
+              "number": "04",
+              "icon": "Rocket",
+              "title": "Carry it through release",
+              "copy": "Work alongside QA, deployment, product, and field teams through validation, rollout, monitoring, and production response.",
+              "tags": [
+                {
+                  "value": "QA partnership"
+                },
+                {
+                  "value": "Deployment"
+                },
+                {
+                  "value": "Release operations"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "blockType": "workSection5",
+          "field1": "Want the deeper technical story?",
+          "field2": "mailto:hsekar.bat@gmail.com",
+          "field3": "Let's discuss the work"
+        }
+      ],
+      "_status": "published"
+    },
+    {
+      "title": "Contact",
+      "slug": "contact",
+      "shell": "contact-page",
+      "seo": {},
+      "sections": [
+        {
+          "blockType": "contactSection1",
+          "field1": "04",
+          "field2": "Contact",
+          "field3": "Good work starts with an honest conversation.",
+          "field4": "If you're building a serious product, untangling a difficult system, or assembling a team around meaningful work, I'd like to hear about it.",
+          "field5": "Email me",
+          "field6": "ELSEWHERE",
+          "field7": "https://github.com/Rakesh-ops-sketch",
+          "field8": "GitHub ↗",
+          "field9": "https://www.linkedin.com/in/lucifermsloh/",
+          "field10": "LinkedIn ↗"
+        }
+      ],
+      "_status": "published"
+    },
+    {
+      "title": "Playground",
+      "slug": "playground",
+      "shell": "inner-page playground-page",
+      "seo": {
+        "title": "Interactive Playground | Rakesh Biswal",
+        "description": "Interactive games and algorithm visualizers built with React."
+      },
+      "sections": [
+        {
+          "blockType": "playgroundSection1",
+          "field1": "03",
+          "field2": "Interactive playground",
+          "field3": "Small experiments. Serious curiosity.",
+          "field4": "Playable ideas and visual explanations built to make algorithms, state, and browser behavior tangible.",
+          "field5": "13 EXPERIMENTS / ALWAYS EVOLVING"
+        },
+        {
+          "blockType": "playgroundSection2",
+          "field1": "01",
+          "field2": "Games",
+          "field3": "Logic you can play."
+        },
+        {
+          "blockType": "playgroundSection3",
+          "field1": "02",
+          "field2": "Visual systems",
+          "field3": "Concepts you can see."
+        }
+      ],
+      "_status": "published"
+    }
+  ],
+  "shared": {
+    "roles": [
+      {
+        "period": "2025 — NOW",
+        "title": "Assistant Engineering Manager",
+        "company": "Educational Initiatives",
+        "summary": "Leading engineering teams, architecture decisions, and cross-functional delivery for large-scale education platforms."
+      },
+      {
+        "period": "2024 — 2025",
+        "title": "Engineering Lead",
+        "company": "Educational Initiatives",
+        "summary": "Led the Neev rebuild and high-stakes state deployments, turning field constraints into dependable product systems."
+      },
+      {
+        "period": "2023 — 2024",
+        "title": "Lead Developer",
+        "company": "Educational Initiatives",
+        "summary": "Owned full-stack delivery across mobile, backend, quality, and release operations for offline-first assessment tools."
+      },
+      {
+        "period": "2022 — 2023",
+        "title": "HTML5 Interactive Developer",
+        "company": "Educational Initiatives",
+        "summary": "Built interactive learning experiences and established the hands-on product foundation that grew into broader mobile, backend, and platform ownership."
+      }
+    ],
+    "testimonials": [
+      {
+        "id": "gayathre",
+        "quote": "Working with Rakesh has been a great learning experience. He was my first senior and has always been someone I could rely on for his knowledge, guidance, and calm approach. Even during high-pressure situations and urgent field requirements, he handled things calmly and efficiently, resolving issues quickly without letting the pressure affect the quality of his work. His expertise and willingness to help have made a significant impact on my learning and growth.",
+        "name": "Gayathre Ranga Sri R",
+        "role": "SDE 2, Educational Initiatives Pvt Ltd"
+      },
+      {
+        "id": "divya",
+        "quote": "Rakesh is one of the most supportive and approachable leads I've worked with. He brings strong technical expertise to the table, but what stands out most is how generously he shares that knowledge—whether it's patiently explaining a concept from the very basics or breaking down a complex task into clear, actionable pieces. He gives us the ownership to solve and grow while providing the right guidance when we need it, which makes him not just a great lead, but someone who genuinely helps the people around him become better.",
+        "name": "Divya",
+        "role": "Senior SDE, Educational Initiatives Pvt Ltd"
+      },
+      {
+        "id": "kartik",
+        "quote": "Working with Rakesh was a great experience. He understands requirements quickly, and always focuses on delivering efficient and scalable solutions.",
+        "name": "Kartik Jha",
+        "role": "Assistant Engineering Manager, Educational Initiatives Pvt Ltd"
+      }
+    ],
+    "careerChapters": [
+      {
+        "period": "2022 — 2023",
+        "role": "HTML5 Interactive Developer",
+        "company": "Educational Initiatives",
+        "icon": "Code2",
+        "chapter": "Foundation",
+        "headline": "Learning to build through interaction.",
+        "summary": "Started with browser-based educational experiences, translating learning objectives into responsive interactions, state-driven behavior, and clear learner feedback.",
+        "responsibilities": [
+          "HTML5 educational games",
+          "Interactive learning flows",
+          "Cross-device behavior",
+          "Iteration with content and QA teams"
+        ],
+        "growth": "Built the product instincts and implementation discipline that later expanded into mobile, backend, and platform ownership."
+      },
+      {
+        "period": "2023 — 2024",
+        "role": "Lead Developer",
+        "company": "Educational Initiatives",
+        "icon": "Layers3",
+        "chapter": "System ownership",
+        "headline": "From individual experiences to connected products.",
+        "summary": "Moved beyond the interaction layer to own full-stack delivery across mobile applications, backend services, quality workflows, and releases for offline-first assessment products.",
+        "responsibilities": [
+          "React Native delivery",
+          "Go/Gin backend services",
+          "Offline sync and recovery",
+          "Release and production support"
+        ],
+        "growth": "Shifted from feature execution to reasoning about reliability, data integrity, architecture, and the full lifecycle of a field product."
+      },
+      {
+        "period": "2024 — 2025",
+        "role": "Engineering Lead",
+        "company": "Educational Initiatives",
+        "icon": "Rocket",
+        "chapter": "Scaled delivery",
+        "headline": "Making architecture and execution move together.",
+        "summary": "Led the Neev rebuild and high-stakes state deployments, coordinating engineering decisions with product priorities, QA validation, deployment readiness, and field realities.",
+        "responsibilities": [
+          "Architecture and roadmaps",
+          "Team planning and execution",
+          "QA and deployment coordination",
+          "Stakeholder and field alignment"
+        ],
+        "growth": "Expanded from owning systems to creating the clarity, operating rhythm, and technical direction required for multiple teams to deliver together."
+      },
+      {
+        "period": "2025 — NOW",
+        "role": "Assistant Engineering Manager",
+        "company": "Educational Initiatives",
+        "icon": "Users2",
+        "chapter": "Engineering leadership",
+        "headline": "Growing teams without moving away from the work.",
+        "summary": "Leads engineering teams, architecture decisions, cross-functional planning, and dependable delivery for large-scale education platforms while remaining close to critical implementation details.",
+        "responsibilities": [
+          "People and technical leadership",
+          "Portfolio-level planning",
+          "Architecture reviews",
+          "Executive and stakeholder communication"
+        ],
+        "growth": "Balances team development, delivery accountability, and hands-on engineering judgment across products with consequential real-world use."
+      }
+    ],
+    "games": [
+      {
+        "title": "Tech Stack Memory",
+        "description": "Pattern recognition and memory, built around familiar engineering tools.",
+        "action": "MemoryGameModal"
+      },
+      {
+        "title": "Tic-Tac-Toe AI",
+        "description": "An unbeatable opponent powered by the minimax algorithm.",
+        "action": "TicTacToeModal"
+      },
+      {
+        "title": "Classic Snake",
+        "description": "Grid movement, collision logic, and an escalating score loop.",
+        "action": "SnakeGameModal"
+      },
+      {
+        "title": "2048",
+        "description": "Tile merging, keyboard controls, and state-driven puzzle mechanics.",
+        "action": "Game2048Modal"
+      },
+      {
+        "title": "Simon Says",
+        "description": "A sequence memory challenge with increasingly difficult patterns.",
+        "action": "SimonSaysModal"
+      }
+    ],
+    "visualizers": [
+      {
+        "title": "Tower of Hanoi",
+        "description": "Recursive problem-solving visualized move by move.",
+        "action": "TowerOfHanoiModal"
+      },
+      {
+        "title": "Pathfinding",
+        "description": "Compare A*, Dijkstra, breadth-first, and depth-first search.",
+        "action": "PathfindingModal"
+      },
+      {
+        "title": "Sorting",
+        "description": "See how classic sorting strategies transform the same data.",
+        "action": "SortingModal"
+      },
+      {
+        "title": "Binary Search Tree",
+        "description": "Explore insert, search, and delete operations spatially.",
+        "action": "BSTModal"
+      },
+      {
+        "title": "N-Queens",
+        "description": "Watch backtracking navigate a classic constraint problem.",
+        "action": "NQueensModal"
+      },
+      {
+        "title": "Maze Solver",
+        "description": "Generate a maze and compare routes through it.",
+        "action": "MazeModal"
+      },
+      {
+        "title": "Node.js Event Loop",
+        "description": "Follow work through the stack, microtasks, and libuv phases.",
+        "action": "EventLoopModal"
+      },
+      {
+        "title": "Promise Combinators",
+        "description": "Compare all, race, allSettled, and any in real time.",
+        "action": "PromiseModal"
+      }
+    ]
+  },
+  "projects": [
+    {
+      "id": "neev",
+      "slug": "neev",
+      "title": "Ei Neev Assessments",
+      "summary": "An offline-first foundational literacy and numeracy platform built for government-backed education programs operating across low-connectivity classrooms.",
+      "role": "Engineering Lead · Architecture & delivery",
+      "category": "National FLN platform",
+      "presentations": [
+        {
+          "blockType": "homeSection2",
+          "field1": "01",
+          "field2": "Selected case study",
+          "field3": "National FLN platform",
+          "field4": "Ei Neev Assessments",
+          "field5": "An offline-first foundational literacy and numeracy platform built for government-backed education programs operating across low-connectivity classrooms.",
+          "field6": [
+            {
+              "value": "React Native"
+            },
+            {
+              "value": "Realm"
+            },
+            {
+              "value": "Go / Gin"
+            },
+            {
+              "value": "S3"
+            },
+            {
+              "value": "MongoDB"
+            }
+          ],
+          "field7": "OFFLINE-FIRST FIELD SYSTEM / 2022—NOW",
+          "field8": "My role",
+          "field9": "Engineering Lead · Architecture & delivery",
+          "field10": "Core stack",
+          "field11": "React Native · Realm · Go/Gin · S3 · MongoDB",
+          "field12": [
+            {
+              "value": "57K",
+              "label": "assessments delivered"
+            },
+            {
+              "value": "27.5K",
+              "label": "students supported"
+            },
+            {
+              "value": "4K",
+              "label": "schools reached"
+            },
+            {
+              "value": "11",
+              "label": "languages supported"
+            }
+          ],
+          "field13": "01 / Reliability",
+          "field14": "Resilient synchronization",
+          "field15": "Re-architected Go/Gin APIs and client-side retry workflows, taking observed development-stage data loss from 50–60% to zero in production validation.",
+          "field16": "02 / Field stability",
+          "field17": "Built for difficult conditions",
+          "field18": "Hardened audio recording, autosave, crash recovery, and offline synchronization for assessment teams working with intermittent connectivity.",
+          "field19": "03 / Modernization",
+          "field20": "A smaller, faster application",
+          "field21": "Migrated to React Native's New Architecture with TurboModules and C++ integrations, reducing the Android application from more than 100 MB to 48 MB.",
+          "field22": [
+            {
+              "value": "NIPUN Bharat delivery across Odisha, Uttar Pradesh, and Rajasthan"
+            },
+            {
+              "value": "Automated Bitbucket and Jenkins pipelines across QA, staging, and AWS production"
+            },
+            {
+              "value": "Roadmaps and releases aligned across product, QA, deployment, and government stakeholders"
+            }
+          ]
+        },
+        {
+          "blockType": "neevWork",
+          "field3": "National FLN platform",
+          "field4": "01 / 03",
+          "field5": "Engineering Lead · Architecture & delivery",
+          "field6": "Ei Neev Assessments",
+          "field7": "An offline-first assessment platform built for government-backed education programs where weak connectivity, large rollouts, and field reliability are everyday constraints.",
+          "field8": "React Native",
+          "field9": "Realm",
+          "field10": "Go / Gin",
+          "field11": "S3",
+          "field12": "MongoDB",
+          "field13": "Reliability shift",
+          "field14": "50–60%",
+          "field15": "→",
+          "field16": "0",
+          "field17": "Observed development-stage data loss reduced to zero in production validation.",
+          "field18": "57K",
+          "field19": "Assessments delivered",
+          "field20": "27.5K",
+          "field21": "Students supported",
+          "field22": "4K",
+          "field23": "Schools reached",
+          "field24": "11",
+          "field25": "Languages supported",
+          "field26": "Resilient client sync, retry paths, autosave, and crash recovery",
+          "field27": "React Native New Architecture, TurboModules, and C++ integrations",
+          "field28": "QA-to-production pipelines across Bitbucket, Jenkins, and AWS"
+        }
+      ],
+      "_status": "published"
+    },
+    {
+      "id": "evaluation",
+      "slug": "evaluation",
+      "title": "Evaluator & Scoring Portal",
+      "summary": "A high-throughput evaluator workspace designed to keep scoring fast, recoverable, and traceable while thousands of browser events compete for delivery.",
+      "role": "Platform architecture · Live operations",
+      "category": "Real-time scoring infrastructure",
+      "presentations": [
+        {
+          "blockType": "homeSection3",
+          "field1": "02",
+          "field2": "Selected case study",
+          "field3": "Real-time scoring infrastructure",
+          "field4": "Evaluator & Scoring Portal",
+          "field5": "A high-throughput evaluator workspace designed to keep scoring fast, recoverable, and traceable while thousands of browser events compete for delivery.",
+          "field6": [
+            {
+              "value": "Full-duplex WebSockets"
+            },
+            {
+              "value": "Persistent event queues"
+            },
+            {
+              "value": "Audit trails"
+            },
+            {
+              "value": "AI-assisted scoring"
+            }
+          ],
+          "field7": "The operating constraint",
+          "field8": "1K–2K",
+          "field9": "evaluators scoring concurrently",
+          "field10": "Every interaction must survive bursts, reconnects, and temporary delivery failures without slowing the evaluator down.",
+          "field11": "System response",
+          "field12": "Browser-first reliability with controlled server delivery",
+          "field13": [
+            {
+              "value": "51,773",
+              "label": "total assessments scored"
+            },
+            {
+              "value": "515,289",
+              "label": "total subtests completed"
+            },
+            {
+              "value": "20,455",
+              "label": "students represented"
+            }
+          ],
+          "field14": "01 / Data integrity",
+          "field15": "Autosave that handles evaluator bursts",
+          "field16": "Isolated browser events can send as single requests, while rapid activity forms a persistent queue that flushes after five seconds of inactivity, with retry handling for failed delivery.",
+          "field17": "02 / Traceability",
+          "field18": "Every scoring decision has history",
+          "field19": "Added versioned scoring workflows, audit trails, evaluator activity tracking, and scrutiny controls for stronger quality and operational oversight.",
+          "field20": "03 / Assisted scoring",
+          "field21": "AI support inside the workflow",
+          "field22": "Integrated Sarvam, Gemini Flash, and in-house models to support evaluators, shorten scoring cycles, and reduce scorer staffing requirements.",
+          "field23": "04 / Live operations",
+          "field24": "Improvement without interruption",
+          "field25": "Improved evaluator UI and extended workflows while active scoring operations continued.",
+          "field26": "Operational outcome",
+          "field27": "Scoring workflows could evolve without interrupting active evaluation operations, while version history, scrutiny controls, and evaluator activity remained visible."
+        },
+        {
+          "blockType": "evaluationWork",
+          "field29": "Real-time scoring infrastructure",
+          "field30": "02 / 03",
+          "field31": "Platform architecture · Live operations",
+          "field32": "Evaluator & Scoring Portal",
+          "field33": "A browser-first evaluator workspace where thousands of scoring events must remain fast, recoverable, and traceable through bursts and reconnects.",
+          "field34": "WebSockets",
+          "field35": "Persistent queues",
+          "field36": "Audit trails",
+          "field37": "AI-assisted scoring",
+          "field38": "Operating scale",
+          "field39": "1K–2K",
+          "field40": "Evaluators scoring concurrently without interrupting active operations.",
+          "field41": "51,773",
+          "field42": "Assessments scored",
+          "field43": "515,289",
+          "field44": "Subtests completed",
+          "field45": "20,455",
+          "field46": "Students represented",
+          "field47": "Persistent browser queues with controlled inactivity-based flushing",
+          "field48": "Versioned scores, scrutiny controls, and evaluator audit history",
+          "field49": "Sarvam, Gemini Flash, and in-house model integrations"
+        }
+      ],
+      "_status": "published"
+    },
+    {
+      "id": "etalk",
+      "slug": "etalk",
+      "title": "E‑Talk",
+      "summary": "Leading the product and engineering of an AI-powered English-learning platform—from the public website and Flutter app to the backend, content CMS, and generation infrastructure.",
+      "role": "CTO · Product & engineering",
+      "category": "English learning venture",
+      "presentations": [
+        {
+          "blockType": "homeSection4",
+          "field1": "03",
+          "field2": "Venture in progress",
+          "field3": "CTO · March 2026 — Present",
+          "field4": "E‑Talk",
+          "field5": "English confidence, built from an Odisha-first perspective.",
+          "field6": "Leading the product and engineering of an AI-powered English-learning platform—from the public website and Flutter app to the backend, content CMS, and generation infrastructure.",
+          "field7": [
+            {
+              "value": "Next.js"
+            },
+            {
+              "value": "React"
+            },
+            {
+              "value": "Flutter"
+            },
+            {
+              "value": "Node.js / Express"
+            },
+            {
+              "value": "TypeScript"
+            },
+            {
+              "value": "MongoDB"
+            },
+            {
+              "value": "Google Cloud"
+            }
+          ],
+          "field8": "https://www.e-talk.in/en",
+          "field9": "Visit E‑Talk",
+          "field10": "Product direction",
+          "field11": "Odia → English",
+          "field12": "Personal learning paths, relatable real-life scenarios, and AI-assisted speaking practice designed around each learner's level and goals.",
+          "field13": "PRE-LAUNCH",
+          "field14": "Lesson generation → internal testing",
+          "field15": "138",
+          "field16": "canonical topics",
+          "field17": "12",
+          "field18": "onboarding goals",
+          "field19": "60–70",
+          "field20": "topics per learner roadmap",
+          "field21": "7",
+          "field22": "CEFR bands · A1 to B2",
+          "field23": "01 / Generation infrastructure",
+          "field24": "A content engine built for quality, cost, and recovery.",
+          "field25": "I reduced an initial spine of 631 topics to 138 reusable canonical topics that can still form unique, goal-relevant roadmaps for individual learners. The CMS coordinates batch generation, review, approval, and publishing without discarding valid work when one asset fails.",
+          "field26": "GPT Terra for lesson generation",
+          "field27": "GPT Image Sunburst for lesson imagery",
+          "field28": "Granular retries preserve successful lessons and assets",
+          "field29": "Live queue monitoring surfaces failures and repair states",
+          "field30": "/work/etalk-cms-redacted.png",
+          "field31": "Redacted E-Talk CMS bulk generation monitor showing queue progress, review states, and granular failure recovery.",
+          "field32": "Proprietary topic names and lesson content have been anonymized.",
+          "field33": "02 / Learning design",
+          "field34": "Personal without generating everything twice",
+          "field35": "Roadmaps combine CEFR progression, learner goals, Odisha-specific situations, useful distractors, and topic uniqueness—sharing a controlled content pool while preserving a tailored experience.",
+          "field36": "03 / Full product ownership",
+          "field37": "One system across every surface",
+          "field38": "Built the launch website, Flutter application, Node/Express APIs, MongoDB data layer, payment flow, learner roadmap, question experiences, progress tracking, and the internal content platform.",
+          "field39": "04 / Next constraint",
+          "field40": "Scaling toward sustainable economics",
+          "field41": "Current work is focused on infrastructure cost after launch and finding the right balance between introductory pricing, AI usage, operational cost, and sustainable revenue."
+        },
+        {
+          "blockType": "etalkWork",
+          "field50": "AI English-learning venture",
+          "field51": "03 / 03",
+          "field52": "CTO · Product & engineering",
+          "field53": "E‑Talk",
+          "field54": "An Odisha-first English-learning product spanning a Next.js launch experience, Flutter learner app, Node/TypeScript services, MongoDB, and a custom content operations platform.",
+          "field55": "Flutter",
+          "field56": "Next.js",
+          "field57": "Node / Express",
+          "field58": "MongoDB",
+          "field59": "Google Cloud",
+          "field60": "https://www.e-talk.in/en",
+          "field61": "Visit E‑Talk",
+          "field62": "/work/etalk-cms-redacted.png",
+          "field63": "Redacted E-Talk content generation CMS showing batch progress and recovery states.",
+          "field64": "Proprietary lesson content anonymized",
+          "field65": "138",
+          "field66": "Canonical topics",
+          "field67": "12",
+          "field68": "Learner goals",
+          "field69": "60–70",
+          "field70": "Topics per roadmap",
+          "field71": "A1–B2",
+          "field72": "CEFR progression",
+          "field73": "Batch AI generation designed to control cost at catalogue scale",
+          "field74": "Asset-level retries preserve successful output when one item fails",
+          "field75": "CMS workflows for planning, generation, review, approval, and repair"
+        }
+      ],
+      "_status": "published"
+    }
+  ]
+}

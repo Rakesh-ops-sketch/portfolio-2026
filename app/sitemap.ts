@@ -1,14 +1,7 @@
-import type { MetadataRoute } from "next";
-
-import { SITE_URL } from "@/lib/constants";
-
-export default function sitemap(): MetadataRoute.Sitemap {
-  const routes = ["", "/about", "/work", "/playground", "/contact"];
-
-  return routes.map((route, index) => ({
-    url: `${SITE_URL}${route}`,
-    lastModified: new Date(),
-    changeFrequency: "monthly",
-    priority: index === 0 ? 1 : 0.8,
-  }));
+import type { MetadataRoute } from 'next';
+import { SITE_URL } from '@/lib/constants';
+import { getSnapshot } from '@/cms/data';
+export default async function sitemap():Promise<MetadataRoute.Sitemap>{
+ const {pages}=await getSnapshot();
+ return pages.filter(page=>!((page.seo||{}) as {noIndex?:boolean}).noIndex).map(page=>({url:`${SITE_URL}${page.slug==='home'?'':`/${page.slug}`}`,lastModified:page.updatedAt?new Date(String(page.updatedAt)):undefined,changeFrequency:'monthly',priority:page.slug==='home'?1:.8}));
 }

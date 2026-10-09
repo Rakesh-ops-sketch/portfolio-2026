@@ -5,12 +5,9 @@ import { ArrowDown, ArrowUpRight } from "lucide-react";
 import { motion, useScroll, useTransform } from "motion/react";
 import { useReducedMotion } from "@/lib/use-reduced-motion";
 
-const lines = [
-  ["Software", "for", "demanding"],
-  ["environments,", "built", "to", "endure."],
-];
 
-export function PremiumHeroHeadline() {
+export function PremiumHeroHeadline({ text = "Software for demanding\nenvironments, built to endure." }: { text?: string }) {
+  const lines = text.split("\n").map(line => line.split(/\s+/).filter(Boolean));
   const reduceMotion = useReducedMotion();
   const [isRevealed, setIsRevealed] = useState(Boolean(reduceMotion));
   let wordIndex = 0;
@@ -21,16 +18,16 @@ export function PremiumHeroHeadline() {
     <h1
       id="hero-title"
       className={`hero-title premium-hero-title${isRevealed ? " is-revealed" : ""}`}
-      aria-label="Software for demanding environments, built to endure."
+      aria-label={text.replace(/\s+/g, " ")}
     >
       {lines.map((line, lineIndex) => (
         <span className="premium-hero-line" aria-hidden="true" key={lineIndex}>
           {line.map((word) => {
             const index = wordIndex++;
             return (
-              <span className="premium-word-mask" key={word}>
+              <span className="premium-word-mask" key={`${index}-${word}`}>
                 <motion.span
-                  className={word === "endure." ? "premium-word premium-word-accent" : "premium-word"}
+                  className={index === finalWordIndex ? "premium-word premium-word-accent" : "premium-word"}
                   initial={reduceMotion ? false : { opacity: 0, y: "108%", rotate: 2.2 }}
                   animate={{ opacity: 1, y: "0%", rotate: 0 }}
                   transition={{
@@ -70,7 +67,7 @@ export function PremiumHeroAmbient() {
   );
 }
 
-export function PremiumHeroActions() {
+export function PremiumHeroActions({ primaryLabel = "Explore my work", primaryHref = "/work", secondaryLabel = "Let’s talk", secondaryHref = "mailto:hsekar.bat@gmail.com" }: { primaryLabel?: string; primaryHref?: string; secondaryLabel?: string; secondaryHref?: string }) {
   return (
     <motion.div
       className="mt-8 flex flex-wrap justify-center gap-3"
@@ -78,11 +75,11 @@ export function PremiumHeroActions() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.9, delay: 1.72, ease: [0.16, 1, 0.3, 1] }}
     >
-      <motion.a href="/work" className="button-lime" whileHover={{ y: -3, scale: 1.015 }} whileTap={{ scale: 0.97 }}>
-        Explore my work <ArrowDown className="size-4" />
+      <motion.a href={primaryHref} className="button-lime" whileHover={{ y: -3, scale: 1.015 }} whileTap={{ scale: 0.97 }}>
+        {primaryLabel} <ArrowDown className="size-4" />
       </motion.a>
-      <motion.a href="mailto:hsekar.bat@gmail.com" className="button-ghost-dark" whileHover={{ y: -3 }} whileTap={{ scale: 0.97 }}>
-        Let&apos;s talk <ArrowUpRight className="size-4" />
+      <motion.a href={secondaryHref} className="button-ghost-dark" whileHover={{ y: -3 }} whileTap={{ scale: 0.97 }}>
+        {secondaryLabel} <ArrowUpRight className="size-4" />
       </motion.a>
     </motion.div>
   );

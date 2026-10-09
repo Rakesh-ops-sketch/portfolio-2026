@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { useReducedMotion as useFramerReducedMotion } from "motion/react";
+import { useReducedMotionConfig as useFramerReducedMotion } from "motion/react";
 
 /**
  * Framer Motion's `useReducedMotion` reads `matchMedia` synchronously on the

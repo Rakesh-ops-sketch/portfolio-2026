@@ -1,0 +1,30 @@
+import { closePayload } from './close-payload';
+import env from '@next/env';
+import { mkdir, readFile, writeFile } from 'node:fs/promises';
+import { randomBytes } from 'node:crypto';
+import { spawn } from 'node:child_process';
+import { PGlite } from '@electric-sql/pglite';
+import { PGLiteSocketServer } from '@electric-sql/pglite-socket';
+env.loadEnvConfig(process.cwd());
+if(process.env.DATABASE_URL)throw new Error('DATABASE_URL is already configured. Use npm run dev for your existing database.');
+const directory='.cms-local';await mkdir(directory,{recursive:true});
+let secret:string;try{secret=await readFile(`${directory}/secret`,'utf8');}catch{secret=randomBytes(32).toString('hex');await writeFile(`${directory}/secret`,secret,{mode:0o600});}
+Object.assign(process.env,{NODE_ENV:'development'});
+process.env.PAYLOAD_SECRET=secret;
+process.env.DATABASE_URL='postgresql://postgres:postgres@127.0.0.1:5433/postgres';
+process.env.CMS_LOCAL_SETUP='1';
+process.env.NEXT_PUBLIC_SITE_URL='http://localhost:3000';
+const db=await PGlite.create(`${directory}/db`);
+const server=new PGLiteSocketServer({db,host:'127.0.0.1',port:5433,maxConnections:10});
+await server.start();
+const {getPayload}=await import('payload');const {default:config}=await import('../payload.config');
+const payload=await getPayload({config});
+await payload.db.migrate();
+const {seedPortfolio}=await import('./seed');await seedPortfolio(payload);
+await closePayload(payload);
+console.log('\nLocal CMS ready: http://localhost:3000/admin\nCreate your owner account in the browser. Your content and account persist in .cms-local/.\n');
+const child=spawn(process.execPath,['node_modules/next/dist/bin/next','dev','--webpack','--hostname','127.0.0.1'],{stdio:'inherit',env:process.env});
+let stopping=false;
+async function stop(){if(stopping)return;stopping=true;child.kill('SIGTERM');await server.stop();await db.close();}
+process.on('SIGINT',()=>{void stop();});process.on('SIGTERM',()=>{void stop();});
+child.on('exit',()=>{void stop();});
