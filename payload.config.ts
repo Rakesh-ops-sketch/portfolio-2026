@@ -15,7 +15,7 @@ export default buildConfig({
  admin:{user:'users',disable:!process.env.DATABASE_URL,importMap:{baseDir:dirname},components:{beforeDashboard:['/components/cms/admin-guide#AdminGuide']},meta:{titleSuffix:' · Portfolio CMS'}},
  collections,globals,editor:lexicalEditor(),sharp,
  db:postgresAdapter({blocksAsJSON:true,pool:{connectionString:process.env.DATABASE_URL || 'postgres://localhost:5432/portfolio',max:Number(process.env.CMS_DB_POOL_MAX||5)},push:false,migrationDir:path.resolve(dirname,'cms/migrations')}),
- plugins:[vercelBlobStorage({alwaysInsertFields:true,enabled:Boolean(process.env.BLOB_READ_WRITE_TOKEN),collections:{media:true},token:process.env.BLOB_READ_WRITE_TOKEN || ''})],
+ plugins:[vercelBlobStorage({alwaysInsertFields:true,enabled:Boolean(process.env.BLOB_READ_WRITE_TOKEN),collections:{media:{disablePayloadAccessControl:true}},token:process.env.BLOB_READ_WRITE_TOKEN || ''})],
  typescript:{outputFile:path.resolve(dirname,'payload-types.ts')},
  onInit:()=>{if(process.env.NODE_ENV==='production' && (!process.env.PAYLOAD_SECRET || !process.env.BLOB_READ_WRITE_TOKEN))throw new Error('Production CMS requires PAYLOAD_SECRET and BLOB_READ_WRITE_TOKEN.');},
 });
