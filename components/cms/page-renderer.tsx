@@ -1,3 +1,4 @@
+import { DesignPrinciples, EngineeringIntro } from '@/components/design-principles';
 import { cloneElement, type ReactElement } from 'react';
 import { templates } from '@/cms/generated/registry';
 import specs from '@/cms/generated/templates.json';
@@ -6,6 +7,8 @@ import { ReusableSection } from './reusable-sections';
 import type { Content, Shared, TemplateProps } from '@/cms/render-helpers';
 export function RenderSection({data,shared}:TemplateProps):ReactElement|null{
  if(data.hidden)return null;
+ if(data.blockType==='designPrinciples')return <DesignPrinciples/>;
+ if(data.blockType==='engineeringIntro')return <EngineeringIntro/>;
  if(data.blockType==='projectPresentation'){
   const project=projectRecords([data.project],shared.projects)[0];
   return project?<ProjectTemplate project={project} variant={String(data.variant||'home')} shared={shared}/>:null;

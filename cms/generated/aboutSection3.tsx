@@ -31,10 +31,11 @@ return (<section id="career-roadmap" className="about-career-section scroll-mt-2
           ))}
         </div>
 
-        <Reveal className="about-career-now">
+        {/* Temporarily pause the parallel venture chapter; retain its CMS content. */}
+        {!data.pauseParallelChapter && <Reveal className="about-career-now">
           <div><span>{t(data, 'field11')}</span><h3>{t(data, 'field12')}</h3></div>
           <p>{t(data, 'field13')}</p>
           <a href={t(data, 'field14')} target="_blank" rel="noreferrer">{t(data, 'field15')}<ArrowUpRight /></a>
-        </Reveal>
+        </Reveal>}
       </div></section>);
 }

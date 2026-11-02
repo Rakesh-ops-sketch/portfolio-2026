@@ -1,4 +1,5 @@
 import 'server-only';
+import { temporaryPresentation } from './temporary-presentation';
 import { cache } from 'react';
 import { unstable_cache } from 'next/cache';
 import { draftMode, headers } from 'next/headers';
@@ -29,7 +30,7 @@ async function readSnapshot(user:User|null=null){
 const publishedSnapshot=unstable_cache(()=>readSnapshot(),['portfolio-cms',cmsConfigured?'connected':'seed'],{tags:['portfolio'],revalidate:300});
 export const getSnapshot=cache(async()=>{
  const {isEnabled}=await draftMode();
- if(isEnabled){const user=await currentOwner();if(user)return {...await readSnapshot(user),preview:true};}
- return {...await publishedSnapshot(),preview:false};
+ if(isEnabled){const user=await currentOwner();if(user)return temporaryPresentation({...await readSnapshot(user),preview:true});}
+ return temporaryPresentation({...await publishedSnapshot(),preview:false});
 });
 export async function getPage(slug:string){const snapshot=await getSnapshot();return {...snapshot,page:snapshot.pages.find(p=>p.slug===slug)};}
